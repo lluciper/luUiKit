@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39054FC92B464B8100887BAF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39054FC82B464B8100887BAF /* HomeViewController.swift */; };
+		39054FCB2B46535000887BAF /* ExtUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39054FCA2B46535000887BAF /* ExtUiViewController.swift */; };
+		39054FCD2B4657B800887BAF /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39054FCC2B4657B800887BAF /* SettingViewController.swift */; };
 		393130462B4502C50061B417 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393130452B4502C50061B417 /* AppDelegate.swift */; };
 		393130482B4502C50061B417 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393130472B4502C50061B417 /* SceneDelegate.swift */; };
 		3931304A2B4502C50061B417 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393130492B4502C50061B417 /* ViewController.swift */; };
 		3931304D2B4502C50061B417 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3931304B2B4502C50061B417 /* Main.storyboard */; };
 		3931304F2B4502C60061B417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3931304E2B4502C60061B417 /* Assets.xcassets */; };
 		393130522B4502C60061B417 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 393130502B4502C60061B417 /* LaunchScreen.storyboard */; };
+		3931305A2B4503D30061B417 /* ExtUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393130592B4503D30061B417 /* ExtUIColor.swift */; };
+		3931305D2B45105C0061B417 /* ExtUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3931305C2B45105C0061B417 /* ExtUIView.swift */; };
+		3931305F2B45429B0061B417 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3931305E2B45429B0061B417 /* AppColor.swift */; };
+		393130622B454CD70061B417 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393130612B454CD70061B417 /* TextField.swift */; };
+		39A6F5602B47971B0078D91A /* CakeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A6F55F2B47971B0078D91A /* CakeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39054FC82B464B8100887BAF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		39054FCA2B46535000887BAF /* ExtUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUiViewController.swift; sourceTree = "<group>"; };
+		39054FCC2B4657B800887BAF /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		393130422B4502C50061B417 /* LuUiKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuUiKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		393130452B4502C50061B417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		393130472B4502C50061B417 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +35,11 @@
 		3931304E2B4502C60061B417 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		393130512B4502C60061B417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		393130532B4502C60061B417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		393130592B4503D30061B417 /* ExtUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUIColor.swift; sourceTree = "<group>"; };
+		3931305C2B45105C0061B417 /* ExtUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUIView.swift; sourceTree = "<group>"; };
+		3931305E2B45429B0061B417 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		393130612B454CD70061B417 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		39A6F55F2B47971B0078D91A /* CakeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,8 @@
 		393130442B4502C50061B417 /* LuUiKit */ = {
 			isa = PBXGroup;
 			children = (
+				393130602B454C8D0061B417 /* Components */,
+				3931305B2B4510420061B417 /* Ext */,
 				393130452B4502C50061B417 /* AppDelegate.swift */,
 				393130472B4502C50061B417 /* SceneDelegate.swift */,
 				393130492B4502C50061B417 /* ViewController.swift */,
@@ -63,8 +81,30 @@
 				3931304E2B4502C60061B417 /* Assets.xcassets */,
 				393130502B4502C60061B417 /* LaunchScreen.storyboard */,
 				393130532B4502C60061B417 /* Info.plist */,
+				3931305E2B45429B0061B417 /* AppColor.swift */,
+				39054FC82B464B8100887BAF /* HomeViewController.swift */,
+				39054FCC2B4657B800887BAF /* SettingViewController.swift */,
+				39A6F55F2B47971B0078D91A /* CakeCollectionViewCell.swift */,
 			);
 			path = LuUiKit;
+			sourceTree = "<group>";
+		};
+		3931305B2B4510420061B417 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				393130592B4503D30061B417 /* ExtUIColor.swift */,
+				3931305C2B45105C0061B417 /* ExtUIView.swift */,
+				39054FCA2B46535000887BAF /* ExtUiViewController.swift */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
+		393130602B454C8D0061B417 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				393130612B454CD70061B417 /* TextField.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +178,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39054FCB2B46535000887BAF /* ExtUiViewController.swift in Sources */,
 				3931304A2B4502C50061B417 /* ViewController.swift in Sources */,
+				3931305A2B4503D30061B417 /* ExtUIColor.swift in Sources */,
 				393130462B4502C50061B417 /* AppDelegate.swift in Sources */,
+				39054FC92B464B8100887BAF /* HomeViewController.swift in Sources */,
+				39054FCD2B4657B800887BAF /* SettingViewController.swift in Sources */,
+				393130622B454CD70061B417 /* TextField.swift in Sources */,
+				39A6F5602B47971B0078D91A /* CakeCollectionViewCell.swift in Sources */,
 				393130482B4502C50061B417 /* SceneDelegate.swift in Sources */,
+				3931305D2B45105C0061B417 /* ExtUIView.swift in Sources */,
+				3931305F2B45429B0061B417 /* AppColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +343,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +372,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
