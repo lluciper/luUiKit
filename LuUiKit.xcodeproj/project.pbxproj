@@ -21,6 +21,7 @@
 		3931305F2B45429B0061B417 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3931305E2B45429B0061B417 /* AppColor.swift */; };
 		393130622B454CD70061B417 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393130612B454CD70061B417 /* TextField.swift */; };
 		39A6F5602B47971B0078D91A /* CakeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A6F55F2B47971B0078D91A /* CakeCollectionViewCell.swift */; };
+		39AE01F42B48FEA700FDFBB9 /* CakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE01F32B48FEA700FDFBB9 /* CakeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		3931305E2B45429B0061B417 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		393130612B454CD70061B417 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		39A6F55F2B47971B0078D91A /* CakeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeCollectionViewCell.swift; sourceTree = "<group>"; };
+		39AE01F32B48FEA700FDFBB9 /* CakeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				39054FC82B464B8100887BAF /* HomeViewController.swift */,
 				39054FCC2B4657B800887BAF /* SettingViewController.swift */,
 				39A6F55F2B47971B0078D91A /* CakeCollectionViewCell.swift */,
+				39AE01F32B48FEA700FDFBB9 /* CakeTableViewCell.swift */,
 			);
 			path = LuUiKit;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39054FCB2B46535000887BAF /* ExtUiViewController.swift in Sources */,
+				39AE01F42B48FEA700FDFBB9 /* CakeTableViewCell.swift in Sources */,
 				3931304A2B4502C50061B417 /* ViewController.swift in Sources */,
 				3931305A2B4503D30061B417 /* ExtUIColor.swift in Sources */,
 				393130462B4502C50061B417 /* AppDelegate.swift in Sources */,

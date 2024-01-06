@@ -11,6 +11,7 @@ import UIKit
 class AppColor {
     
     static let origin : UIColor = UIColor(hexString: "FF9666")
+    static let green : UIColor = UIColor(hexString: "174C4F")
     static let white : UIColor = UIColor.white
     static let transparent : UIColor = UIColor.clear
     
