@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="bg_login" id="B40-bc-XvZ">
-                                <rect key="frame" x="-3" y="-2" width="431" height="932"/>
+                                <rect key="frame" x="-4" y="-3" width="432" height="932"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="am5-G2-DOc">
@@ -873,8 +873,71 @@
             </objects>
             <point key="canvasLocation" x="129.76744186046511" y="1574.678111587983"/>
         </scene>
+        <!--Info Cake View Controller-->
+        <scene sceneID="V38-Rz-FH6">
+            <objects>
+                <viewController storyboardIdentifier="infoCakeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2Nb-Sv-J4K" customClass="InfoCakeViewController" customModule="LuUiKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aa1-7i-UbK">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3E4-1v-Kor">
+                                <rect key="frame" x="24" y="83" width="382" height="36"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kdi-Uf-FFM">
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Back" translatesAutoresizingMaskIntoConstraints="NO" id="sZg-Xn-pDO">
+                                                <rect key="frame" x="8" y="8" width="20" height="20"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="4z1-s9-xz5"/>
+                                            <constraint firstItem="sZg-Xn-pDO" firstAttribute="top" secondItem="Kdi-Uf-FFM" secondAttribute="top" constant="8" id="Agk-xH-Cgs"/>
+                                            <constraint firstAttribute="trailing" secondItem="sZg-Xn-pDO" secondAttribute="trailing" constant="8" id="Rv7-vv-SUI"/>
+                                            <constraint firstAttribute="bottom" secondItem="sZg-Xn-pDO" secondAttribute="bottom" constant="8" id="a3m-bR-4mh"/>
+                                            <constraint firstAttribute="width" constant="36" id="eqq-Id-0GR"/>
+                                            <constraint firstItem="sZg-Xn-pDO" firstAttribute="leading" secondItem="Kdi-Uf-FFM" secondAttribute="leading" constant="8" id="iXj-uQ-PT6"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="NGS_cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="NGS_shadowRadius">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Kdi-Uf-FFM" firstAttribute="leading" secondItem="3E4-1v-Kor" secondAttribute="leading" id="Hnj-1H-GOw"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kdi-Uf-FFM" secondAttribute="bottom" id="Jz3-PO-Teb"/>
+                                    <constraint firstItem="Kdi-Uf-FFM" firstAttribute="top" secondItem="3E4-1v-Kor" secondAttribute="top" id="lZ6-Zv-aad"/>
+                                    <constraint firstAttribute="height" constant="36" id="xGt-nK-ycF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ndr-iP-DQ2"/>
+                        <color key="backgroundColor" red="1" green="0.96470588235294119" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3E4-1v-Kor" firstAttribute="top" secondItem="Ndr-iP-DQ2" secondAttribute="top" constant="24" id="0R7-fS-ELg"/>
+                            <constraint firstItem="Ndr-iP-DQ2" firstAttribute="trailing" secondItem="3E4-1v-Kor" secondAttribute="trailing" constant="24" id="Ahq-7V-Qry"/>
+                            <constraint firstItem="3E4-1v-Kor" firstAttribute="leading" secondItem="Ndr-iP-DQ2" secondAttribute="leading" constant="24" id="KLY-Bc-hud"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backView" destination="Kdi-Uf-FFM" id="LmD-Rf-AJm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ml9-PL-ZFF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129.76744186046511" y="2316.952789699571"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Back" width="10" height="20.333333969116211"/>
         <image name="Cart" width="24" height="24"/>
         <image name="Home" width="24" height="26.333333969116211"/>
         <image name="Location" width="15" height="15"/>

@@ -20,6 +20,7 @@
 		3931305D2B45105C0061B417 /* ExtUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3931305C2B45105C0061B417 /* ExtUIView.swift */; };
 		3931305F2B45429B0061B417 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3931305E2B45429B0061B417 /* AppColor.swift */; };
 		393130622B454CD70061B417 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393130612B454CD70061B417 /* TextField.swift */; };
+		3948F4622B4B98B1006CA3B2 /* InfoCakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3948F4612B4B98B1006CA3B2 /* InfoCakeViewController.swift */; };
 		39A6F5602B47971B0078D91A /* CakeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A6F55F2B47971B0078D91A /* CakeCollectionViewCell.swift */; };
 		39AE01F42B48FEA700FDFBB9 /* CakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE01F32B48FEA700FDFBB9 /* CakeTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		3931305C2B45105C0061B417 /* ExtUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUIView.swift; sourceTree = "<group>"; };
 		3931305E2B45429B0061B417 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		393130612B454CD70061B417 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		3948F4612B4B98B1006CA3B2 /* InfoCakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCakeViewController.swift; sourceTree = "<group>"; };
 		39A6F55F2B47971B0078D91A /* CakeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeCollectionViewCell.swift; sourceTree = "<group>"; };
 		39AE01F32B48FEA700FDFBB9 /* CakeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +90,7 @@
 				39054FCC2B4657B800887BAF /* SettingViewController.swift */,
 				39A6F55F2B47971B0078D91A /* CakeCollectionViewCell.swift */,
 				39AE01F32B48FEA700FDFBB9 /* CakeTableViewCell.swift */,
+				3948F4612B4B98B1006CA3B2 /* InfoCakeViewController.swift */,
 			);
 			path = LuUiKit;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				393130482B4502C50061B417 /* SceneDelegate.swift in Sources */,
 				3931305D2B45105C0061B417 /* ExtUIView.swift in Sources */,
 				3931305F2B45429B0061B417 /* AppColor.swift in Sources */,
+				3948F4622B4B98B1006CA3B2 /* InfoCakeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
