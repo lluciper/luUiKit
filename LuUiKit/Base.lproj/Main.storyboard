@@ -921,7 +921,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Fu-cj-Ek8">
                                 <rect key="frame" x="40" y="163" width="350" height="334"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="334" id="nfe-UX-cPK"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="334" id="nfe-UX-cPK"/>
+                                    <constraint firstAttribute="height" constant="334" id="p09-kP-4cC"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4W5-gD-Job">
@@ -1061,12 +1062,35 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b0a-Ij-Fpz">
+                                        <rect key="frame" x="24" y="24" width="382" height="48"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pumpkin Spice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg7-ak-GHR">
+                                                <rect key="frame" x="0.0" y="0.0" width="362" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                <color key="textColor" red="0.090196078430000007" green="0.29803921570000003" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="cg7-ak-GHR" firstAttribute="leading" secondItem="b0a-Ij-Fpz" secondAttribute="leading" id="UBN-3M-lM9"/>
+                                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="cg7-ak-GHR" secondAttribute="trailing" constant="20" symbolic="YES" id="VaA-Uv-slS"/>
+                                            <constraint firstItem="cg7-ak-GHR" firstAttribute="top" secondItem="b0a-Ij-Fpz" secondAttribute="top" id="a2m-15-j7H"/>
+                                            <constraint firstAttribute="bottom" secondItem="cg7-ak-GHR" secondAttribute="bottom" id="sOz-FD-XIS"/>
+                                            <constraint firstAttribute="height" constant="48" id="sYt-Kg-uOT"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="395" id="3LV-xK-JxF"/>
+                                    <constraint firstItem="b0a-Ij-Fpz" firstAttribute="top" secondItem="4W5-gD-Job" secondAttribute="top" constant="24" id="7Lw-Qe-rkG"/>
                                     <constraint firstItem="pTB-XZ-UjZ" firstAttribute="leading" secondItem="4W5-gD-Job" secondAttribute="leading" id="PGt-ZN-ydf"/>
+                                    <constraint firstItem="b0a-Ij-Fpz" firstAttribute="leading" secondItem="4W5-gD-Job" secondAttribute="leading" constant="24" id="Vkz-TM-UdD"/>
                                     <constraint firstAttribute="bottom" secondItem="pTB-XZ-UjZ" secondAttribute="bottom" id="Zeg-SV-Vyt"/>
                                     <constraint firstAttribute="trailing" secondItem="pTB-XZ-UjZ" secondAttribute="trailing" id="sCu-PX-nuL"/>
+                                    <constraint firstAttribute="trailing" secondItem="b0a-Ij-Fpz" secondAttribute="trailing" constant="24" id="x4e-N3-6IO"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="NGS_cornerRadius">
