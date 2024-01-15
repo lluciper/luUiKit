@@ -23,6 +23,8 @@
 		3948F4622B4B98B1006CA3B2 /* InfoCakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3948F4612B4B98B1006CA3B2 /* InfoCakeViewController.swift */; };
 		39A6F5602B47971B0078D91A /* CakeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A6F55F2B47971B0078D91A /* CakeCollectionViewCell.swift */; };
 		39AE01F42B48FEA700FDFBB9 /* CakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE01F32B48FEA700FDFBB9 /* CakeTableViewCell.swift */; };
+		39B41EBA2B54D446008BE69B /* OdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B41EB92B54D446008BE69B /* OdersViewController.swift */; };
+		39B7B7AA2B5543430049B04A /* BagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B7B7A92B5543430049B04A /* BagViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		3948F4612B4B98B1006CA3B2 /* InfoCakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCakeViewController.swift; sourceTree = "<group>"; };
 		39A6F55F2B47971B0078D91A /* CakeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeCollectionViewCell.swift; sourceTree = "<group>"; };
 		39AE01F32B48FEA700FDFBB9 /* CakeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeTableViewCell.swift; sourceTree = "<group>"; };
+		39B41EB92B54D446008BE69B /* OdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdersViewController.swift; sourceTree = "<group>"; };
+		39B7B7A92B5543430049B04A /* BagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,8 @@
 				39A6F55F2B47971B0078D91A /* CakeCollectionViewCell.swift */,
 				39AE01F32B48FEA700FDFBB9 /* CakeTableViewCell.swift */,
 				3948F4612B4B98B1006CA3B2 /* InfoCakeViewController.swift */,
+				39B41EB92B54D446008BE69B /* OdersViewController.swift */,
+				39B7B7A92B5543430049B04A /* BagViewController.swift */,
 			);
 			path = LuUiKit;
 			sourceTree = "<group>";
@@ -192,10 +198,12 @@
 				39054FC92B464B8100887BAF /* HomeViewController.swift in Sources */,
 				39054FCD2B4657B800887BAF /* SettingViewController.swift in Sources */,
 				393130622B454CD70061B417 /* TextField.swift in Sources */,
+				39B41EBA2B54D446008BE69B /* OdersViewController.swift in Sources */,
 				39A6F5602B47971B0078D91A /* CakeCollectionViewCell.swift in Sources */,
 				393130482B4502C50061B417 /* SceneDelegate.swift in Sources */,
 				3931305D2B45105C0061B417 /* ExtUIView.swift in Sources */,
 				3931305F2B45429B0061B417 /* AppColor.swift in Sources */,
+				39B7B7AA2B5543430049B04A /* BagViewController.swift in Sources */,
 				3948F4622B4B98B1006CA3B2 /* InfoCakeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

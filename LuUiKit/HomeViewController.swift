@@ -155,6 +155,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         
         cell.cakeImage.layer.cornerRadius = 4
         cell.cakeImage.clipsToBounds = true
+        cell.cakeImage.backgroundColor = UIColor(hexString: "FFE5E5")
         cell.cakeLabel.text = drink[indexPath.row]
         cell.selectionStyle = .none
         return cell
