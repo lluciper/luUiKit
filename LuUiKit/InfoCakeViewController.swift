@@ -34,22 +34,7 @@ class InfoCakeViewController: UIViewController {
         self.desDetalTextView.textContainer.lineFragmentPadding = 0
         
         let imageURLString = "https://anhdephd.vn/wp-content/uploads/2022/03/hinh-anh-anime-nam-ngau.jpg"
-        
-        if let imageURL = URL(string: imageURLString) {
-            let task = URLSession.shared.dataTask(with: imageURL) { (data, response, error) in
-                if let data = data {
-                    DispatchQueue.main.async {
-                        self.imageCake.image = UIImage(data: data)
-                    }
-                    
-                } else if let error = error {
-                    print("Lỗi khi tải dữ liệu hình ảnh: \(error.localizedDescription)")
-                }
-            }
-            task.resume()
-        } else {
-            print("Đường link hình ảnh không hợp lệ.")
-        }
+        self.imageCake.setImage(imageURLString)
     }
     
     @IBAction func onAddToBag(_ sender: Any) {

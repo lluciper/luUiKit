@@ -85,22 +85,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cakeCell", for: indexPath) as! CakeCollectionViewCell
         let imageURLString = "https://anhdephd.vn/wp-content/uploads/2022/03/hinh-anh-anime-nam-ngau.jpg"
-        
-        if let imageURL = URL(string: imageURLString) {
-            let task = URLSession.shared.dataTask(with: imageURL) { (data, response, error) in
-                if let data = data {
-                    DispatchQueue.main.async {
-                        cell.imageCake.image = UIImage(data: data)
-                    }
-                    
-                } else if let error = error {
-                    print("Lỗi khi tải dữ liệu hình ảnh: \(error.localizedDescription)")
-                }
-            }
-            task.resume()
-        } else {
-            print("Đường link hình ảnh không hợp lệ.")
-        }
+        cell.imageCake.setImage(imageURLString)
         cell.imageCake.layer.cornerRadius = 8
         cell.imageCake.clipsToBounds = true
         cell.nameCake.text = listNameCake[indexPath.row]
@@ -136,23 +121,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cakeTableCell", for: indexPath) as! CakeTableViewCell
         
         let imageURLString = "https://anhdephd.vn/wp-content/uploads/2022/03/hinh-anh-anime-nam-ngau.jpg"
-        
-        if let imageURL = URL(string: imageURLString) {
-            let task = URLSession.shared.dataTask(with: imageURL) { (data, response, error) in
-                if let data = data {
-                    DispatchQueue.main.async {
-                        cell.cakeImage.image = UIImage(data: data)
-                    }
-                    
-                } else if let error = error {
-                    print("Lỗi khi tải dữ liệu hình ảnh: \(error.localizedDescription)")
-                }
-            }
-            task.resume()
-        } else {
-            print("Đường link hình ảnh không hợp lệ.")
-        }
-        
+        cell.cakeImage.setImage(imageURLString)
         cell.cakeImage.layer.cornerRadius = 4
         cell.cakeImage.clipsToBounds = true
         cell.cakeImage.backgroundColor = UIColor(hexString: "FFE5E5")

@@ -24,6 +24,9 @@
 		39A6F5602B47971B0078D91A /* CakeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A6F55F2B47971B0078D91A /* CakeCollectionViewCell.swift */; };
 		39AE01F42B48FEA700FDFBB9 /* CakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE01F32B48FEA700FDFBB9 /* CakeTableViewCell.swift */; };
 		39B41EBA2B54D446008BE69B /* OdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B41EB92B54D446008BE69B /* OdersViewController.swift */; };
+		39B5F7B12B561C57001471A9 /* ItemOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B5F7B02B561C57001471A9 /* ItemOrderTableViewCell.swift */; };
+		39B5F7B72B566FF9001471A9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 39B5F7B62B566FF9001471A9 /* Kingfisher */; };
+		39B5F7B92B56701D001471A9 /* ExtUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B5F7B82B56701D001471A9 /* ExtUIImageView.swift */; };
 		39B7B7AA2B5543430049B04A /* BagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B7B7A92B5543430049B04A /* BagViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,8 @@
 		39A6F55F2B47971B0078D91A /* CakeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeCollectionViewCell.swift; sourceTree = "<group>"; };
 		39AE01F32B48FEA700FDFBB9 /* CakeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeTableViewCell.swift; sourceTree = "<group>"; };
 		39B41EB92B54D446008BE69B /* OdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdersViewController.swift; sourceTree = "<group>"; };
+		39B5F7B02B561C57001471A9 /* ItemOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemOrderTableViewCell.swift; sourceTree = "<group>"; };
+		39B5F7B82B56701D001471A9 /* ExtUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUIImageView.swift; sourceTree = "<group>"; };
 		39B7B7A92B5543430049B04A /* BagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39B5F7B72B566FF9001471A9 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +103,7 @@
 				3948F4612B4B98B1006CA3B2 /* InfoCakeViewController.swift */,
 				39B41EB92B54D446008BE69B /* OdersViewController.swift */,
 				39B7B7A92B5543430049B04A /* BagViewController.swift */,
+				39B5F7B02B561C57001471A9 /* ItemOrderTableViewCell.swift */,
 			);
 			path = LuUiKit;
 			sourceTree = "<group>";
@@ -107,6 +114,7 @@
 				393130592B4503D30061B417 /* ExtUIColor.swift */,
 				3931305C2B45105C0061B417 /* ExtUIView.swift */,
 				39054FCA2B46535000887BAF /* ExtUiViewController.swift */,
+				39B5F7B82B56701D001471A9 /* ExtUIImageView.swift */,
 			);
 			path = Ext;
 			sourceTree = "<group>";
@@ -135,6 +143,9 @@
 			dependencies = (
 			);
 			name = LuUiKit;
+			packageProductDependencies = (
+				39B5F7B62B566FF9001471A9 /* Kingfisher */,
+			);
 			productName = LuUiKit;
 			productReference = 393130422B4502C50061B417 /* LuUiKit.app */;
 			productType = "com.apple.product-type.application";
@@ -163,6 +174,9 @@
 				Base,
 			);
 			mainGroup = 393130392B4502C50061B417;
+			packageReferences = (
+				39B5F7B52B566FF9001471A9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 393130432B4502C50061B417 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -195,6 +209,7 @@
 				3931304A2B4502C50061B417 /* ViewController.swift in Sources */,
 				3931305A2B4503D30061B417 /* ExtUIColor.swift in Sources */,
 				393130462B4502C50061B417 /* AppDelegate.swift in Sources */,
+				39B5F7B12B561C57001471A9 /* ItemOrderTableViewCell.swift in Sources */,
 				39054FC92B464B8100887BAF /* HomeViewController.swift in Sources */,
 				39054FCD2B4657B800887BAF /* SettingViewController.swift in Sources */,
 				393130622B454CD70061B417 /* TextField.swift in Sources */,
@@ -203,6 +218,7 @@
 				393130482B4502C50061B417 /* SceneDelegate.swift in Sources */,
 				3931305D2B45105C0061B417 /* ExtUIView.swift in Sources */,
 				3931305F2B45429B0061B417 /* AppColor.swift in Sources */,
+				39B5F7B92B56701D001471A9 /* ExtUIImageView.swift in Sources */,
 				39B7B7AA2B5543430049B04A /* BagViewController.swift in Sources */,
 				3948F4622B4B98B1006CA3B2 /* InfoCakeViewController.swift in Sources */,
 			);
@@ -424,6 +440,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		39B5F7B52B566FF9001471A9 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		39B5F7B62B566FF9001471A9 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39B5F7B52B566FF9001471A9 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3931303A2B4502C50061B417 /* Project object */;
 }
