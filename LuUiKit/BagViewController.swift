@@ -25,7 +25,7 @@ extension BagViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemOderCell", for: indexPath) as! ItemOrderTableViewCell
         
-        let imageURLString = "https://anhdephd.vn/wp-content/uploads/2022/03/hinh-anh-anime-nam-ngau.jpg"
+        let imageURLString = "https://i.pinimg.com/originals/42/6b/d9/426bd99833a838b008ca06582d4d5b5e.jpg"
         cell.imgItem.setImage(imageURLString)
         cell.imgItem.layer.cornerRadius = 4
         cell.imgItem.clipsToBounds = true

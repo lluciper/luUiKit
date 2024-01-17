@@ -84,7 +84,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDelegate
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cakeCell", for: indexPath) as! CakeCollectionViewCell
-        let imageURLString = "https://anhdephd.vn/wp-content/uploads/2022/03/hinh-anh-anime-nam-ngau.jpg"
+        let imageURLString = "https://i.pinimg.com/originals/42/6b/d9/426bd99833a838b008ca06582d4d5b5e.jpg"
         cell.imageCake.setImage(imageURLString)
         cell.imageCake.layer.cornerRadius = 8
         cell.imageCake.clipsToBounds = true
@@ -120,7 +120,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cakeTableCell", for: indexPath) as! CakeTableViewCell
         
-        let imageURLString = "https://anhdephd.vn/wp-content/uploads/2022/03/hinh-anh-anime-nam-ngau.jpg"
+        let imageURLString = "https://i.pinimg.com/originals/42/6b/d9/426bd99833a838b008ca06582d4d5b5e.jpg"
         cell.cakeImage.setImage(imageURLString)
         cell.cakeImage.layer.cornerRadius = 4
         cell.cakeImage.clipsToBounds = true

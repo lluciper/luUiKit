@@ -9,8 +9,6 @@ import UIKit
 
 class OdersViewController: UIViewController {
 
-    
-    @IBOutlet weak var btnbtnbtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         

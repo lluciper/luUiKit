@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		39054FC92B464B8100887BAF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39054FC82B464B8100887BAF /* HomeViewController.swift */; };
 		39054FCB2B46535000887BAF /* ExtUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39054FCA2B46535000887BAF /* ExtUiViewController.swift */; };
-		39054FCD2B4657B800887BAF /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39054FCC2B4657B800887BAF /* SettingViewController.swift */; };
+		39054FCD2B4657B800887BAF /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39054FCC2B4657B800887BAF /* AccountViewController.swift */; };
 		393130462B4502C50061B417 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393130452B4502C50061B417 /* AppDelegate.swift */; };
 		393130482B4502C50061B417 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393130472B4502C50061B417 /* SceneDelegate.swift */; };
 		3931304A2B4502C50061B417 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393130492B4502C50061B417 /* ViewController.swift */; };
@@ -33,7 +33,7 @@
 /* Begin PBXFileReference section */
 		39054FC82B464B8100887BAF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		39054FCA2B46535000887BAF /* ExtUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUiViewController.swift; sourceTree = "<group>"; };
-		39054FCC2B4657B800887BAF /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		39054FCC2B4657B800887BAF /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		393130422B4502C50061B417 /* LuUiKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuUiKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		393130452B4502C50061B417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		393130472B4502C50061B417 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 				393130532B4502C60061B417 /* Info.plist */,
 				3931305E2B45429B0061B417 /* AppColor.swift */,
 				39054FC82B464B8100887BAF /* HomeViewController.swift */,
-				39054FCC2B4657B800887BAF /* SettingViewController.swift */,
+				39054FCC2B4657B800887BAF /* AccountViewController.swift */,
 				39A6F55F2B47971B0078D91A /* CakeCollectionViewCell.swift */,
 				39AE01F32B48FEA700FDFBB9 /* CakeTableViewCell.swift */,
 				3948F4612B4B98B1006CA3B2 /* InfoCakeViewController.swift */,
@@ -211,7 +211,7 @@
 				393130462B4502C50061B417 /* AppDelegate.swift in Sources */,
 				39B5F7B12B561C57001471A9 /* ItemOrderTableViewCell.swift in Sources */,
 				39054FC92B464B8100887BAF /* HomeViewController.swift in Sources */,
-				39054FCD2B4657B800887BAF /* SettingViewController.swift in Sources */,
+				39054FCD2B4657B800887BAF /* AccountViewController.swift in Sources */,
 				393130622B454CD70061B417 /* TextField.swift in Sources */,
 				39B41EBA2B54D446008BE69B /* OdersViewController.swift in Sources */,
 				39A6F5602B47971B0078D91A /* CakeCollectionViewCell.swift in Sources */,

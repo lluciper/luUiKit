@@ -30,10 +30,10 @@ class InfoCakeViewController: UIViewController {
         
         self.backView.addGestureRecognizer(tapBackView)
         self.labelDetalView.addGestureRecognizer(tapLabelDetal)
-        self.imageCake.backgroundColor = UIColor(hexString: "FFE5E5")
         self.desDetalTextView.textContainer.lineFragmentPadding = 0
         
-        let imageURLString = "https://anhdephd.vn/wp-content/uploads/2022/03/hinh-anh-anime-nam-ngau.jpg"
+        let imageURLString = "https://i.pinimg.com/originals/42/6b/d9/426bd99833a838b008ca06582d4d5b5e.jpg"
+        self.imageCake.backgroundColor = UIColor(hexString: "FFE5E5")
         self.imageCake.setImage(imageURLString)
     }
     
