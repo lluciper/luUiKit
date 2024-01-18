@@ -21,6 +21,9 @@
 		3931305F2B45429B0061B417 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3931305E2B45429B0061B417 /* AppColor.swift */; };
 		393130622B454CD70061B417 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393130612B454CD70061B417 /* TextField.swift */; };
 		3948F4622B4B98B1006CA3B2 /* InfoCakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3948F4612B4B98B1006CA3B2 /* InfoCakeViewController.swift */; };
+		3997A4C62B58E33B000101E9 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 3997A4C52B58E33B000101E9 /* RxCocoa */; };
+		3997A4CA2B58E33B000101E9 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 3997A4C92B58E33B000101E9 /* RxRelay */; };
+		3997A4CE2B58E33B000101E9 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3997A4CD2B58E33B000101E9 /* RxSwift */; };
 		39A6F5602B47971B0078D91A /* CakeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A6F55F2B47971B0078D91A /* CakeCollectionViewCell.swift */; };
 		39AE01F42B48FEA700FDFBB9 /* CakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE01F32B48FEA700FDFBB9 /* CakeTableViewCell.swift */; };
 		39B41EBA2B54D446008BE69B /* OdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B41EB92B54D446008BE69B /* OdersViewController.swift */; };
@@ -60,6 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3997A4CE2B58E33B000101E9 /* RxSwift in Frameworks */,
+				3997A4C62B58E33B000101E9 /* RxCocoa in Frameworks */,
+				3997A4CA2B58E33B000101E9 /* RxRelay in Frameworks */,
 				39B5F7B72B566FF9001471A9 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +151,9 @@
 			name = LuUiKit;
 			packageProductDependencies = (
 				39B5F7B62B566FF9001471A9 /* Kingfisher */,
+				3997A4C52B58E33B000101E9 /* RxCocoa */,
+				3997A4C92B58E33B000101E9 /* RxRelay */,
+				3997A4CD2B58E33B000101E9 /* RxSwift */,
 			);
 			productName = LuUiKit;
 			productReference = 393130422B4502C50061B417 /* LuUiKit.app */;
@@ -176,6 +185,7 @@
 			mainGroup = 393130392B4502C50061B417;
 			packageReferences = (
 				39B5F7B52B566FF9001471A9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				3997A4C42B58E33B000101E9 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 393130432B4502C50061B417 /* Products */;
 			projectDirPath = "";
@@ -442,6 +452,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3997A4C42B58E33B000101E9 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
 		39B5F7B52B566FF9001471A9 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -453,6 +471,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3997A4C52B58E33B000101E9 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3997A4C42B58E33B000101E9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		3997A4C92B58E33B000101E9 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3997A4C42B58E33B000101E9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		3997A4CD2B58E33B000101E9 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3997A4C42B58E33B000101E9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
 		39B5F7B62B566FF9001471A9 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 39B5F7B52B566FF9001471A9 /* XCRemoteSwiftPackageReference "Kingfisher" */;

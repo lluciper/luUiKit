@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="bg_login" id="B40-bc-XvZ">
-                                <rect key="frame" x="-13" y="-15" width="401" height="865"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="am5-G2-DOc">
@@ -489,13 +489,36 @@
                                             <constraint firstAttribute="bottom" secondItem="5Jz-xa-7P8" secondAttribute="bottom" id="wz0-xE-Vfe"/>
                                         </constraints>
                                     </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VMt-On-H03">
+                                        <rect key="frame" x="12" y="15" width="321" height="40"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCa-qo-oMn">
+                                                <rect key="frame" x="0.0" y="0.0" width="107" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GBB-Qr-tLO">
+                                                <rect key="frame" x="107" y="0.0" width="107" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZ4-Au-BE2">
+                                                <rect key="frame" x="214" y="0.0" width="107" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="K7K-FH-1da"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="3YN-d4-ZDU" firstAttribute="leading" secondItem="kFX-WA-eua" secondAttribute="leading" constant="16" id="2JF-0s-4sp"/>
+                                    <constraint firstAttribute="trailing" secondItem="VMt-On-H03" secondAttribute="trailing" constant="12" id="5Oi-5m-6h3"/>
                                     <constraint firstAttribute="bottom" secondItem="3YN-d4-ZDU" secondAttribute="bottom" constant="16" id="7Gw-Mf-B9t"/>
                                     <constraint firstAttribute="trailing" secondItem="3YN-d4-ZDU" secondAttribute="trailing" constant="16" id="lsS-Ut-Tr3"/>
                                     <constraint firstAttribute="height" constant="182" id="rse-qo-rLl"/>
+                                    <constraint firstItem="VMt-On-H03" firstAttribute="top" secondItem="kFX-WA-eua" secondAttribute="top" constant="15" id="tb8-GM-8Ao"/>
+                                    <constraint firstItem="VMt-On-H03" firstAttribute="leading" secondItem="kFX-WA-eua" secondAttribute="leading" constant="12" id="x1a-LL-veh"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="NGS_cornerRadius">
@@ -531,6 +554,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Orders" image="Orders" id="IIZ-Pu-xUB"/>
+                    <connections>
+                        <outlet property="viewsss" destination="kFX-WA-eua" id="872-qd-J1d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="naX-Pw-HAZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -544,13 +570,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RewardsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="I42-dy-8W8">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RewardsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="I42-dy-8W8">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OEs-kK-BhG">
+                                <rect key="frame" x="24" y="83" width="345" height="324"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="324" id="aRa-6b-LiN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="NGS_cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="NGS_shadowRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cwn-nG-g8i">
+                                <rect key="frame" x="24" y="447" width="345" height="266"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="266" id="FjU-4r-trp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="NGS_cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="NGS_shadowRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NPR-RS-D04"/>
                         <color key="backgroundColor" red="1" green="0.96470588235294119" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="OEs-kK-BhG" firstAttribute="top" secondItem="NPR-RS-D04" secondAttribute="top" constant="24" id="6CW-aW-6a5"/>
+                            <constraint firstItem="NPR-RS-D04" firstAttribute="trailing" secondItem="Cwn-nG-g8i" secondAttribute="trailing" constant="24" id="FiO-pN-rFY"/>
+                            <constraint firstItem="NPR-RS-D04" firstAttribute="trailing" secondItem="OEs-kK-BhG" secondAttribute="trailing" constant="24" id="Jtg-6T-o0H"/>
+                            <constraint firstItem="Cwn-nG-g8i" firstAttribute="leading" secondItem="NPR-RS-D04" secondAttribute="leading" constant="24" id="PSL-T0-O8d"/>
+                            <constraint firstItem="OEs-kK-BhG" firstAttribute="leading" secondItem="NPR-RS-D04" secondAttribute="leading" constant="24" id="c94-2p-cm5"/>
+                            <constraint firstItem="Cwn-nG-g8i" firstAttribute="top" secondItem="OEs-kK-BhG" secondAttribute="bottom" constant="40" id="k3k-fw-2Og"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Rewards" image="Gift" id="vt4-nj-fBy"/>
                 </viewController>
@@ -891,7 +955,6 @@
                                     <constraint firstItem="NOA-IE-JeO" firstAttribute="trailing" secondItem="aiU-K1-Rie" secondAttribute="trailing" constant="316" id="TAV-fk-1rV"/>
                                     <constraint firstItem="NOA-IE-JeO" firstAttribute="top" secondItem="aiU-K1-Rie" secondAttribute="top" id="W2R-cp-PWW"/>
                                     <constraint firstItem="NOA-IE-JeO" firstAttribute="leading" secondItem="aiU-K1-Rie" secondAttribute="leading" id="blv-pT-7ub"/>
-                                    <constraint firstItem="NOA-IE-JeO" firstAttribute="centerY" secondItem="Xg1-Fa-FfJ" secondAttribute="centerY" id="lt9-ZW-DqP"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="aiU-K1-Rie"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Xg1-Fa-FfJ"/>
@@ -2172,8 +2235,17 @@ pumpkin spice cake donut</string>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
