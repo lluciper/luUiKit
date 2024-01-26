@@ -50,7 +50,6 @@ extension UIView {
             return layer.shadowRadius
         }
         set {
-            layer.masksToBounds = false
             layer.shadowColor = UIColor.red.cgColor
 //            layer.shadowOffset = CGSize(width: self.frame.size.width, height: 10)
             layer.shadowOffset = CGSize(width: 0, height: 2)

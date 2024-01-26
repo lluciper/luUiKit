@@ -20,6 +20,8 @@
 		3931305D2B45105C0061B417 /* ExtUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3931305C2B45105C0061B417 /* ExtUIView.swift */; };
 		3931305F2B45429B0061B417 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3931305E2B45429B0061B417 /* AppColor.swift */; };
 		393130622B454CD70061B417 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393130612B454CD70061B417 /* TextField.swift */; };
+		3931E2D22B635913009614C0 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3931E2D12B635913009614C0 /* OrderTableViewCell.swift */; };
+		3931E2D42B63593B009614C0 /* LabelOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3931E2D32B63593B009614C0 /* LabelOrderTableViewCell.swift */; };
 		3948F4622B4B98B1006CA3B2 /* InfoCakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3948F4612B4B98B1006CA3B2 /* InfoCakeViewController.swift */; };
 		398989202B61FE6500133DDB /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3989891F2B61FE6500133DDB /* RewardsViewController.swift */; };
 		3989892E2B62617E00133DDB /* EnumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3989892D2B62617E00133DDB /* EnumApp.swift */; };
@@ -51,6 +53,8 @@
 		3931305C2B45105C0061B417 /* ExtUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUIView.swift; sourceTree = "<group>"; };
 		3931305E2B45429B0061B417 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		393130612B454CD70061B417 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		3931E2D12B635913009614C0 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		3931E2D32B63593B009614C0 /* LabelOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelOrderTableViewCell.swift; sourceTree = "<group>"; };
 		3948F4612B4B98B1006CA3B2 /* InfoCakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCakeViewController.swift; sourceTree = "<group>"; };
 		3989891F2B61FE6500133DDB /* RewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
 		3989892D2B62617E00133DDB /* EnumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumApp.swift; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 				39B7B7A92B5543430049B04A /* BagViewController.swift */,
 				39B5F7B02B561C57001471A9 /* ItemOrderTableViewCell.swift */,
 				3989891F2B61FE6500133DDB /* RewardsViewController.swift */,
+				3931E2D12B635913009614C0 /* OrderTableViewCell.swift */,
+				3931E2D32B63593B009614C0 /* LabelOrderTableViewCell.swift */,
 			);
 			path = LuUiKit;
 			sourceTree = "<group>";
@@ -234,8 +240,10 @@
 				3931305A2B4503D30061B417 /* ExtUIColor.swift in Sources */,
 				393130462B4502C50061B417 /* AppDelegate.swift in Sources */,
 				39B5F7B12B561C57001471A9 /* ItemOrderTableViewCell.swift in Sources */,
+				3931E2D22B635913009614C0 /* OrderTableViewCell.swift in Sources */,
 				39054FC92B464B8100887BAF /* HomeViewController.swift in Sources */,
 				39054FCD2B4657B800887BAF /* AccountViewController.swift in Sources */,
+				3931E2D42B63593B009614C0 /* LabelOrderTableViewCell.swift in Sources */,
 				3989892E2B62617E00133DDB /* EnumApp.swift in Sources */,
 				393130622B454CD70061B417 /* TextField.swift in Sources */,
 				398989202B61FE6500133DDB /* RewardsViewController.swift in Sources */,
