@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="bg_login" id="B40-bc-XvZ">
-                                <rect key="frame" x="-3" y="-2" width="395" height="854"/>
+                                <rect key="frame" x="-4" y="-3" width="397" height="854"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="am5-G2-DOc">
@@ -789,7 +789,20 @@ Pick Up!</string>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="og3-wa-K8h">
                                                             <rect key="frame" x="0.0" y="0.0" width="255" height="80"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRb-82-SPc">
+                                                                    <rect key="frame" x="10" y="10" width="245" height="14.333333333333336"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                                    <color key="textColor" red="0.087555624540000002" green="0.2988518476" blue="0.31085669989999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="BRb-82-SPc" firstAttribute="top" secondItem="og3-wa-K8h" secondAttribute="top" constant="10" id="IhH-Xw-lRn"/>
+                                                                <constraint firstItem="BRb-82-SPc" firstAttribute="leading" secondItem="og3-wa-K8h" secondAttribute="leading" constant="10" id="QXy-6C-zJA"/>
+                                                                <constraint firstAttribute="trailing" secondItem="BRb-82-SPc" secondAttribute="trailing" id="w4j-x3-T4i"/>
+                                                            </constraints>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="NGS_cornerRadius">
                                                                     <real key="value" value="20"/>
@@ -835,6 +848,7 @@ Pick Up!</string>
                                             <outlet property="dataLeftView" destination="og3-wa-K8h" id="0Nt-9s-Fp5"/>
                                             <outlet property="dataRightView" destination="yWg-Iq-isQ" id="UaL-oc-UoM"/>
                                             <outlet property="dataView" destination="GQS-VH-yx0" id="Y4X-CC-bsG"/>
+                                            <outlet property="labelOrder" destination="BRb-82-SPc" id="mjx-0x-BjC"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -890,7 +904,7 @@ Pick Up!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RewardsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="I42-dy-8W8">
-                                <rect key="frame" x="-2" y="-4" width="392" height="852"/>
+                                <rect key="frame" x="-3" y="-4" width="393" height="851"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OEs-kK-BhG">

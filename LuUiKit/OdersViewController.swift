@@ -24,9 +24,6 @@ class OdersViewController: UIViewController {
     
     var order : [String] = ["aaaaa", "bbbbbb", "cccccc", "dddddd"]
     
-//    cellItemOrder
-//    cellItemLabelOrder
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         onChangeStatusOder(.cooks)
@@ -88,27 +85,25 @@ class OdersViewController: UIViewController {
 
 extension OdersViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return order.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if tableView == oderTable {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cellItemOrder", for: indexPath) as! OrderTableViewCell
-            cell.dataLeftView.clipsToBounds = true
-            cell.dataRightView.clipsToBounds = true
-            cell.dataView.layer.masksToBounds = false
-            cell.dataView.layer.cornerRadius = 20
-            cell.dataView.layer.shadowColor = UIColor.red.cgColor
-            cell.dataView.layer.shadowOffset = CGSize(width: 0, height: 2)
-            cell.dataView.layer.shadowOpacity = 0.1
-            cell.dataView.layer.shadowRadius = 1
-            cell.dataView.layer.shadowPath = UIBezierPath(roundedRect: cell.dataView.bounds, cornerRadius: cell.dataView.layer.cornerRadius).cgPath
-            cell.dataView.layer.shouldRasterize = true
-            cell.dataView.layer.rasterizationScale = UIScreen.main.scale
-            cell.selectionStyle = .none
-            return cell
-        }
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellItemOrder", for: indexPath) as! OrderTableViewCell
+        cell.dataLeftView.clipsToBounds = true
+        cell.dataRightView.clipsToBounds = true
+        cell.dataView.layer.masksToBounds = false
+        cell.dataView.layer.cornerRadius = 20
+        cell.dataView.layer.shadowColor = UIColor.red.cgColor
+        cell.dataView.layer.shadowOffset = CGSize(width: 0, height: 2)
+        cell.dataView.layer.shadowOpacity = 0.1
+        cell.dataView.layer.shadowRadius = 1
+        cell.dataView.layer.shadowPath = UIBezierPath(roundedRect: cell.dataView.bounds, cornerRadius: cell.dataView.layer.cornerRadius).cgPath
+        cell.dataView.layer.shouldRasterize = true
+        cell.dataView.layer.rasterizationScale = UIScreen.main.scale
+        cell.selectionStyle = .none
+        cell.labelOrder.text = order[indexPath.row]
+        return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
