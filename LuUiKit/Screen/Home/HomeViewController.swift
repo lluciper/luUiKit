@@ -1,15 +1,23 @@
 //
-//  HomeControllerViewController.swift
+//  HomeViewController.swift
 //  LuUiKit
 //
-//  Created by VN Savis on 04/01/2024.
+//  Created by VN Savis on 30/01/2024.
 //
 
 import UIKit
 
 class HomeViewController: UIViewController {
     
-    @IBOutlet weak var cakeCollectionView: UICollectionView!
+    
+
+    @IBOutlet weak var cakeCollectionView: UICollectionView!{
+        didSet {
+            cakeCollectionView.register(UINib(nibName: "CakeCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CakeCollectionViewCell")
+            cakeCollectionView.dataSource = self
+            cakeCollectionView.delegate = self
+        }
+    }
     var listImageCake: [String] = ["Location", "Location", "Location", "Location", "Location"]
     var listNameCake: [String] = ["Donut1", "Donut2", "Donut3", "Donut4", "Donut5"]
     var listPriceCake: [String] = ["$ 1.00", "$ 2.00", "$ 3.00", "$ 4.00", "$ 5.00"]
@@ -25,7 +33,13 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var icedDrinksLabel: UILabel!
     @IBOutlet weak var hotDrinksLabel: UILabel!
     
-    @IBOutlet weak var cakeTableView: UITableView!
+    @IBOutlet weak var cakeTableView: UITableView! {
+        didSet {
+            cakeTableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeTableViewCell")
+            cakeTableView.dataSource = self
+            cakeTableView.delegate = self
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,7 +97,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDelegate
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cakeCell", for: indexPath) as! CakeCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CakeCollectionViewCell", for: indexPath) as! CakeCollectionViewCell
         let imageURLString = "https://i.pinimg.com/originals/42/6b/d9/426bd99833a838b008ca06582d4d5b5e.jpg"
         cell.imageCake.setImage(imageURLString)
         cell.imageCake.layer.cornerRadius = 8
@@ -118,7 +132,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cakeTableCell", for: indexPath) as! CakeTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as! HomeTableViewCell
         
         let imageURLString = "https://i.pinimg.com/originals/42/6b/d9/426bd99833a838b008ca06582d4d5b5e.jpg"
         cell.cakeImage.setImage(imageURLString)

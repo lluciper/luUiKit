@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="bk3-QK-RMg" userLabel="Cake Collection View Cell" customClass="CakeCollectionViewCell" customModule="LuUiKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="174" height="237"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9ag-I1-gAU">
+                <rect key="frame" x="0.0" y="0.0" width="174" height="237"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9II-Si-cGI">
+                        <rect key="frame" x="0.0" y="0.0" width="174" height="233"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anu-04-X16">
+                                <rect key="frame" x="16" y="174" width="142" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" red="0.090196078430000007" green="0.29803921570000003" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1q-D0-BnP">
+                                <rect key="frame" x="16" y="199" width="142" height="14.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" red="0.090196078430000007" green="0.29803921570000003" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W4t-4T-TG6">
+                                <rect key="frame" x="16" y="16" width="142" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="Hen-ln-hKT"/>
+                                    <constraint firstAttribute="height" constant="142" id="n6J-w3-JNZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="NGS_cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="NGS_shadowRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="anu-04-X16" firstAttribute="top" secondItem="W4t-4T-TG6" secondAttribute="bottom" constant="16" id="4dI-sn-vcr"/>
+                            <constraint firstAttribute="trailing" secondItem="W4t-4T-TG6" secondAttribute="trailing" constant="16" id="82l-0z-2RM"/>
+                            <constraint firstItem="W4t-4T-TG6" firstAttribute="leading" secondItem="9II-Si-cGI" secondAttribute="leading" constant="16" id="Tfw-P1-7wE"/>
+                            <constraint firstAttribute="trailing" secondItem="X1q-D0-BnP" secondAttribute="trailing" constant="16" id="WJh-nZ-Ya1"/>
+                            <constraint firstItem="X1q-D0-BnP" firstAttribute="leading" secondItem="9II-Si-cGI" secondAttribute="leading" constant="16" id="gue-ro-6Mc"/>
+                            <constraint firstAttribute="trailing" secondItem="anu-04-X16" secondAttribute="trailing" constant="16" id="t0m-4R-DBs"/>
+                            <constraint firstItem="W4t-4T-TG6" firstAttribute="top" secondItem="9II-Si-cGI" secondAttribute="top" constant="16" id="uoD-Yg-m0o"/>
+                            <constraint firstItem="anu-04-X16" firstAttribute="leading" secondItem="9II-Si-cGI" secondAttribute="leading" constant="16" id="z7Y-UI-QYD"/>
+                            <constraint firstItem="X1q-D0-BnP" firstAttribute="top" secondItem="anu-04-X16" secondAttribute="bottom" constant="8" id="zIh-Ab-9mb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="NGS_cornerRadius">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="NGS_shadowRadius">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="9II-Si-cGI" firstAttribute="top" secondItem="9ag-I1-gAU" secondAttribute="top" id="KQZ-N3-qbZ"/>
+                    <constraint firstItem="9II-Si-cGI" firstAttribute="leading" secondItem="9ag-I1-gAU" secondAttribute="leading" id="PbN-f3-n4n"/>
+                    <constraint firstAttribute="bottom" secondItem="9II-Si-cGI" secondAttribute="bottom" constant="4" id="glR-NX-k7y"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="NGS_cornerRadius">
+                        <real key="value" value="16"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="174" height="237"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="NGS_cornerRadius">
+                    <real key="value" value="16"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="imageCake" destination="W4t-4T-TG6" id="qq5-7f-Q8W"/>
+                <outlet property="nameCake" destination="anu-04-X16" id="RdD-0P-P02"/>
+                <outlet property="priceCake" destination="X1q-D0-BnP" id="6Y2-HT-0S4"/>
+            </connections>
+            <point key="canvasLocation" x="1.5267175572519083" y="-11.619718309859156"/>
+        </collectionViewCell>
+    </objects>
+</document>

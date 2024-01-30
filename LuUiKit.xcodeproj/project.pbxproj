@@ -7,44 +7,74 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39054FC92B464B8100887BAF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39054FC82B464B8100887BAF /* HomeViewController.swift */; };
 		39054FCB2B46535000887BAF /* ExtUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39054FCA2B46535000887BAF /* ExtUiViewController.swift */; };
-		39054FCD2B4657B800887BAF /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39054FCC2B4657B800887BAF /* AccountViewController.swift */; };
+		390C09A32B68A5A100BDCE09 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C09A12B68A5A100BDCE09 /* LoginViewController.swift */; };
+		390C09A42B68A5A100BDCE09 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390C09A22B68A5A100BDCE09 /* LoginViewController.xib */; };
+		390C09B02B68ABF300BDCE09 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C09AE2B68ABF300BDCE09 /* HomeViewController.swift */; };
+		390C09B12B68ABF300BDCE09 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390C09AF2B68ABF300BDCE09 /* HomeViewController.xib */; };
+		390C09B52B68ADD600BDCE09 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C09B32B68ADD600BDCE09 /* HomeTableViewCell.swift */; };
+		390C09B62B68ADD600BDCE09 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390C09B42B68ADD600BDCE09 /* HomeTableViewCell.xib */; };
+		390C09B92B68D27600BDCE09 /* CakeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C09B72B68D27600BDCE09 /* CakeCollectionViewCell.swift */; };
+		390C09BA2B68D27600BDCE09 /* CakeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390C09B82B68D27600BDCE09 /* CakeCollectionViewCell.xib */; };
+		390C09BE2B68D7E000BDCE09 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C09BC2B68D7E000BDCE09 /* AccountViewController.swift */; };
+		390C09BF2B68D7E000BDCE09 /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390C09BD2B68D7E000BDCE09 /* AccountViewController.xib */; };
+		390C09C32B68D8C700BDCE09 /* InfoCakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C09C12B68D8C700BDCE09 /* InfoCakeViewController.swift */; };
+		390C09C42B68D8C700BDCE09 /* InfoCakeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390C09C22B68D8C700BDCE09 /* InfoCakeViewController.xib */; };
+		390C09C82B68DBE700BDCE09 /* BagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C09C62B68DBE600BDCE09 /* BagViewController.swift */; };
+		390C09C92B68DBE700BDCE09 /* BagViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390C09C72B68DBE600BDCE09 /* BagViewController.xib */; };
+		390C09CD2B68DC6000BDCE09 /* ItemOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C09CB2B68DC6000BDCE09 /* ItemOrderTableViewCell.swift */; };
+		390C09CE2B68DC6000BDCE09 /* ItemOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390C09CC2B68DC6000BDCE09 /* ItemOrderTableViewCell.xib */; };
+		390C09D22B68E42300BDCE09 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C09D02B68E42300BDCE09 /* OrderViewController.swift */; };
+		390C09D32B68E42300BDCE09 /* OrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390C09D12B68E42300BDCE09 /* OrderViewController.xib */; };
+		390C09DB2B68E51500BDCE09 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C09D92B68E51500BDCE09 /* OrderTableViewCell.swift */; };
+		390C09DC2B68E51500BDCE09 /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390C09DA2B68E51500BDCE09 /* OrderTableViewCell.xib */; };
+		390C09E02B68E79D00BDCE09 /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C09DE2B68E79D00BDCE09 /* RewardsViewController.swift */; };
+		390C09E12B68E79D00BDCE09 /* RewardsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390C09DF2B68E79D00BDCE09 /* RewardsViewController.xib */; };
+		390C09E42B68F44C00BDCE09 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C09E32B68F44C00BDCE09 /* HomeTabBarController.swift */; };
 		393130462B4502C50061B417 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393130452B4502C50061B417 /* AppDelegate.swift */; };
 		393130482B4502C50061B417 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393130472B4502C50061B417 /* SceneDelegate.swift */; };
-		3931304A2B4502C50061B417 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393130492B4502C50061B417 /* ViewController.swift */; };
-		3931304D2B4502C50061B417 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3931304B2B4502C50061B417 /* Main.storyboard */; };
 		3931304F2B4502C60061B417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3931304E2B4502C60061B417 /* Assets.xcassets */; };
 		393130522B4502C60061B417 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 393130502B4502C60061B417 /* LaunchScreen.storyboard */; };
 		3931305A2B4503D30061B417 /* ExtUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393130592B4503D30061B417 /* ExtUIColor.swift */; };
 		3931305D2B45105C0061B417 /* ExtUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3931305C2B45105C0061B417 /* ExtUIView.swift */; };
 		3931305F2B45429B0061B417 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3931305E2B45429B0061B417 /* AppColor.swift */; };
 		393130622B454CD70061B417 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393130612B454CD70061B417 /* TextField.swift */; };
-		3931E2D22B635913009614C0 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3931E2D12B635913009614C0 /* OrderTableViewCell.swift */; };
-		3948F4622B4B98B1006CA3B2 /* InfoCakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3948F4612B4B98B1006CA3B2 /* InfoCakeViewController.swift */; };
-		398989202B61FE6500133DDB /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3989891F2B61FE6500133DDB /* RewardsViewController.swift */; };
 		3989892E2B62617E00133DDB /* EnumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3989892D2B62617E00133DDB /* EnumApp.swift */; };
 		3997A4C62B58E33B000101E9 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 3997A4C52B58E33B000101E9 /* RxCocoa */; };
 		3997A4CA2B58E33B000101E9 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 3997A4C92B58E33B000101E9 /* RxRelay */; };
 		3997A4CE2B58E33B000101E9 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3997A4CD2B58E33B000101E9 /* RxSwift */; };
-		39A6F5602B47971B0078D91A /* CakeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A6F55F2B47971B0078D91A /* CakeCollectionViewCell.swift */; };
-		39AE01F42B48FEA700FDFBB9 /* CakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE01F32B48FEA700FDFBB9 /* CakeTableViewCell.swift */; };
-		39B41EBA2B54D446008BE69B /* OdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B41EB92B54D446008BE69B /* OdersViewController.swift */; };
-		39B5F7B12B561C57001471A9 /* ItemOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B5F7B02B561C57001471A9 /* ItemOrderTableViewCell.swift */; };
 		39B5F7B72B566FF9001471A9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 39B5F7B62B566FF9001471A9 /* Kingfisher */; };
 		39B5F7B92B56701D001471A9 /* ExtUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B5F7B82B56701D001471A9 /* ExtUIImageView.swift */; };
-		39B7B7AA2B5543430049B04A /* BagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B7B7A92B5543430049B04A /* BagViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		39054FC82B464B8100887BAF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		39054FCA2B46535000887BAF /* ExtUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUiViewController.swift; sourceTree = "<group>"; };
-		39054FCC2B4657B800887BAF /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		390C09A12B68A5A100BDCE09 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		390C09A22B68A5A100BDCE09 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		390C09AE2B68ABF300BDCE09 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		390C09AF2B68ABF300BDCE09 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		390C09B32B68ADD600BDCE09 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		390C09B42B68ADD600BDCE09 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		390C09B72B68D27600BDCE09 /* CakeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeCollectionViewCell.swift; sourceTree = "<group>"; };
+		390C09B82B68D27600BDCE09 /* CakeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CakeCollectionViewCell.xib; sourceTree = "<group>"; };
+		390C09BC2B68D7E000BDCE09 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		390C09BD2B68D7E000BDCE09 /* AccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
+		390C09C12B68D8C700BDCE09 /* InfoCakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCakeViewController.swift; sourceTree = "<group>"; };
+		390C09C22B68D8C700BDCE09 /* InfoCakeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoCakeViewController.xib; sourceTree = "<group>"; };
+		390C09C62B68DBE600BDCE09 /* BagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagViewController.swift; sourceTree = "<group>"; };
+		390C09C72B68DBE600BDCE09 /* BagViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BagViewController.xib; sourceTree = "<group>"; };
+		390C09CB2B68DC6000BDCE09 /* ItemOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemOrderTableViewCell.swift; sourceTree = "<group>"; };
+		390C09CC2B68DC6000BDCE09 /* ItemOrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemOrderTableViewCell.xib; sourceTree = "<group>"; };
+		390C09D02B68E42300BDCE09 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		390C09D12B68E42300BDCE09 /* OrderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderViewController.xib; sourceTree = "<group>"; };
+		390C09D92B68E51500BDCE09 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		390C09DA2B68E51500BDCE09 /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
+		390C09DE2B68E79D00BDCE09 /* RewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
+		390C09DF2B68E79D00BDCE09 /* RewardsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardsViewController.xib; sourceTree = "<group>"; };
+		390C09E32B68F44C00BDCE09 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		393130422B4502C50061B417 /* LuUiKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuUiKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		393130452B4502C50061B417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		393130472B4502C50061B417 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		393130492B4502C50061B417 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3931304C2B4502C50061B417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3931304E2B4502C60061B417 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		393130512B4502C60061B417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		393130532B4502C60061B417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,16 +82,8 @@
 		3931305C2B45105C0061B417 /* ExtUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUIView.swift; sourceTree = "<group>"; };
 		3931305E2B45429B0061B417 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		393130612B454CD70061B417 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
-		3931E2D12B635913009614C0 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
-		3948F4612B4B98B1006CA3B2 /* InfoCakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCakeViewController.swift; sourceTree = "<group>"; };
-		3989891F2B61FE6500133DDB /* RewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
 		3989892D2B62617E00133DDB /* EnumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumApp.swift; sourceTree = "<group>"; };
-		39A6F55F2B47971B0078D91A /* CakeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeCollectionViewCell.swift; sourceTree = "<group>"; };
-		39AE01F32B48FEA700FDFBB9 /* CakeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeTableViewCell.swift; sourceTree = "<group>"; };
-		39B41EB92B54D446008BE69B /* OdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdersViewController.swift; sourceTree = "<group>"; };
-		39B5F7B02B561C57001471A9 /* ItemOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemOrderTableViewCell.swift; sourceTree = "<group>"; };
 		39B5F7B82B56701D001471A9 /* ExtUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUIImageView.swift; sourceTree = "<group>"; };
-		39B7B7A92B5543430049B04A /* BagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +101,124 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		390C099F2B68A57200BDCE09 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				390C09DD2B68E73000BDCE09 /* Rewards */,
+				390C09CF2B68E40700BDCE09 /* Order */,
+				390C09C52B68DBCF00BDCE09 /* Bag */,
+				390C09C02B68D8AD00BDCE09 /* InfoCake */,
+				390C09BB2B68D7B600BDCE09 /* Account */,
+				390C09AD2B68ABE400BDCE09 /* Home */,
+				390C09A02B68A57E00BDCE09 /* Login */,
+				390C09E32B68F44C00BDCE09 /* HomeTabBarController.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		390C09A02B68A57E00BDCE09 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				390C09A12B68A5A100BDCE09 /* LoginViewController.swift */,
+				390C09A22B68A5A100BDCE09 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		390C09AD2B68ABE400BDCE09 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				390C09B22B68ACF000BDCE09 /* Cell */,
+				390C09AE2B68ABF300BDCE09 /* HomeViewController.swift */,
+				390C09AF2B68ABF300BDCE09 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		390C09B22B68ACF000BDCE09 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				390C09B32B68ADD600BDCE09 /* HomeTableViewCell.swift */,
+				390C09B42B68ADD600BDCE09 /* HomeTableViewCell.xib */,
+				390C09B72B68D27600BDCE09 /* CakeCollectionViewCell.swift */,
+				390C09B82B68D27600BDCE09 /* CakeCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		390C09BB2B68D7B600BDCE09 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				390C09BC2B68D7E000BDCE09 /* AccountViewController.swift */,
+				390C09BD2B68D7E000BDCE09 /* AccountViewController.xib */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		390C09C02B68D8AD00BDCE09 /* InfoCake */ = {
+			isa = PBXGroup;
+			children = (
+				390C09C12B68D8C700BDCE09 /* InfoCakeViewController.swift */,
+				390C09C22B68D8C700BDCE09 /* InfoCakeViewController.xib */,
+			);
+			path = InfoCake;
+			sourceTree = "<group>";
+		};
+		390C09C52B68DBCF00BDCE09 /* Bag */ = {
+			isa = PBXGroup;
+			children = (
+				390C09CA2B68DC3C00BDCE09 /* Cell */,
+				390C09C62B68DBE600BDCE09 /* BagViewController.swift */,
+				390C09C72B68DBE600BDCE09 /* BagViewController.xib */,
+			);
+			path = Bag;
+			sourceTree = "<group>";
+		};
+		390C09CA2B68DC3C00BDCE09 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				390C09CB2B68DC6000BDCE09 /* ItemOrderTableViewCell.swift */,
+				390C09CC2B68DC6000BDCE09 /* ItemOrderTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		390C09CF2B68E40700BDCE09 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				390C09D82B68E4DD00BDCE09 /* Cell */,
+				390C09D02B68E42300BDCE09 /* OrderViewController.swift */,
+				390C09D12B68E42300BDCE09 /* OrderViewController.xib */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		390C09D82B68E4DD00BDCE09 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				390C09D92B68E51500BDCE09 /* OrderTableViewCell.swift */,
+				390C09DA2B68E51500BDCE09 /* OrderTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		390C09DD2B68E73000BDCE09 /* Rewards */ = {
+			isa = PBXGroup;
+			children = (
+				390C09DE2B68E79D00BDCE09 /* RewardsViewController.swift */,
+				390C09DF2B68E79D00BDCE09 /* RewardsViewController.xib */,
+			);
+			path = Rewards;
+			sourceTree = "<group>";
+		};
+		390C09E22B68EA9E00BDCE09 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				3931305E2B45429B0061B417 /* AppColor.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		393130392B4502C50061B417 = {
 			isa = PBXGroup;
 			children = (
@@ -98,27 +238,16 @@
 		393130442B4502C50061B417 /* LuUiKit */ = {
 			isa = PBXGroup;
 			children = (
+				390C09E22B68EA9E00BDCE09 /* Config */,
+				390C099F2B68A57200BDCE09 /* Screen */,
 				3989892C2B62615800133DDB /* Untils */,
 				393130602B454C8D0061B417 /* Components */,
 				3931305B2B4510420061B417 /* Ext */,
 				393130452B4502C50061B417 /* AppDelegate.swift */,
 				393130472B4502C50061B417 /* SceneDelegate.swift */,
-				393130492B4502C50061B417 /* ViewController.swift */,
-				3931304B2B4502C50061B417 /* Main.storyboard */,
 				3931304E2B4502C60061B417 /* Assets.xcassets */,
 				393130502B4502C60061B417 /* LaunchScreen.storyboard */,
 				393130532B4502C60061B417 /* Info.plist */,
-				3931305E2B45429B0061B417 /* AppColor.swift */,
-				39054FC82B464B8100887BAF /* HomeViewController.swift */,
-				39054FCC2B4657B800887BAF /* AccountViewController.swift */,
-				39A6F55F2B47971B0078D91A /* CakeCollectionViewCell.swift */,
-				39AE01F32B48FEA700FDFBB9 /* CakeTableViewCell.swift */,
-				3948F4612B4B98B1006CA3B2 /* InfoCakeViewController.swift */,
-				39B41EB92B54D446008BE69B /* OdersViewController.swift */,
-				39B7B7A92B5543430049B04A /* BagViewController.swift */,
-				39B5F7B02B561C57001471A9 /* ItemOrderTableViewCell.swift */,
-				3989891F2B61FE6500133DDB /* RewardsViewController.swift */,
-				3931E2D12B635913009614C0 /* OrderTableViewCell.swift */,
 			);
 			path = LuUiKit;
 			sourceTree = "<group>";
@@ -218,9 +347,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				390C09C42B68D8C700BDCE09 /* InfoCakeViewController.xib in Resources */,
+				390C09A42B68A5A100BDCE09 /* LoginViewController.xib in Resources */,
 				393130522B4502C60061B417 /* LaunchScreen.storyboard in Resources */,
+				390C09B12B68ABF300BDCE09 /* HomeViewController.xib in Resources */,
 				3931304F2B4502C60061B417 /* Assets.xcassets in Resources */,
-				3931304D2B4502C50061B417 /* Main.storyboard in Resources */,
+				390C09CE2B68DC6000BDCE09 /* ItemOrderTableViewCell.xib in Resources */,
+				390C09C92B68DBE700BDCE09 /* BagViewController.xib in Resources */,
+				390C09D32B68E42300BDCE09 /* OrderViewController.xib in Resources */,
+				390C09B62B68ADD600BDCE09 /* HomeTableViewCell.xib in Resources */,
+				390C09E12B68E79D00BDCE09 /* RewardsViewController.xib in Resources */,
+				390C09BF2B68D7E000BDCE09 /* AccountViewController.xib in Resources */,
+				390C09BA2B68D27600BDCE09 /* CakeCollectionViewCell.xib in Resources */,
+				390C09DC2B68E51500BDCE09 /* OrderTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,40 +370,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				390C09A32B68A5A100BDCE09 /* LoginViewController.swift in Sources */,
 				39054FCB2B46535000887BAF /* ExtUiViewController.swift in Sources */,
-				39AE01F42B48FEA700FDFBB9 /* CakeTableViewCell.swift in Sources */,
-				3931304A2B4502C50061B417 /* ViewController.swift in Sources */,
+				390C09E42B68F44C00BDCE09 /* HomeTabBarController.swift in Sources */,
 				3931305A2B4503D30061B417 /* ExtUIColor.swift in Sources */,
+				390C09DB2B68E51500BDCE09 /* OrderTableViewCell.swift in Sources */,
 				393130462B4502C50061B417 /* AppDelegate.swift in Sources */,
-				39B5F7B12B561C57001471A9 /* ItemOrderTableViewCell.swift in Sources */,
-				3931E2D22B635913009614C0 /* OrderTableViewCell.swift in Sources */,
-				39054FC92B464B8100887BAF /* HomeViewController.swift in Sources */,
-				39054FCD2B4657B800887BAF /* AccountViewController.swift in Sources */,
+				390C09B02B68ABF300BDCE09 /* HomeViewController.swift in Sources */,
+				390C09B92B68D27600BDCE09 /* CakeCollectionViewCell.swift in Sources */,
+				390C09C82B68DBE700BDCE09 /* BagViewController.swift in Sources */,
+				390C09BE2B68D7E000BDCE09 /* AccountViewController.swift in Sources */,
 				3989892E2B62617E00133DDB /* EnumApp.swift in Sources */,
 				393130622B454CD70061B417 /* TextField.swift in Sources */,
-				398989202B61FE6500133DDB /* RewardsViewController.swift in Sources */,
-				39B41EBA2B54D446008BE69B /* OdersViewController.swift in Sources */,
-				39A6F5602B47971B0078D91A /* CakeCollectionViewCell.swift in Sources */,
+				390C09C32B68D8C700BDCE09 /* InfoCakeViewController.swift in Sources */,
 				393130482B4502C50061B417 /* SceneDelegate.swift in Sources */,
+				390C09B52B68ADD600BDCE09 /* HomeTableViewCell.swift in Sources */,
+				390C09E02B68E79D00BDCE09 /* RewardsViewController.swift in Sources */,
+				390C09CD2B68DC6000BDCE09 /* ItemOrderTableViewCell.swift in Sources */,
+				390C09D22B68E42300BDCE09 /* OrderViewController.swift in Sources */,
 				3931305D2B45105C0061B417 /* ExtUIView.swift in Sources */,
 				3931305F2B45429B0061B417 /* AppColor.swift in Sources */,
 				39B5F7B92B56701D001471A9 /* ExtUIImageView.swift in Sources */,
-				39B7B7AA2B5543430049B04A /* BagViewController.swift in Sources */,
-				3948F4622B4B98B1006CA3B2 /* InfoCakeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3931304B2B4502C50061B417 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3931304C2B4502C50061B417 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		393130502B4502C60061B417 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -402,7 +534,6 @@
 				INFOPLIST_FILE = LuUiKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -431,7 +562,6 @@
 				INFOPLIST_FILE = LuUiKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
+//  LoginViewController.swift
 //  LuUiKit
 //
-//  Created by VN Savis on 03/01/2024.
+//  Created by VN Savis on 30/01/2024.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
-    
+class LoginViewController: UIViewController {
+
     @IBOutlet weak var viewSignUp: UIView!
     @IBOutlet weak var viewSignIn: UIView!
     @IBOutlet weak var labelSignup: UILabel!
@@ -100,10 +100,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func onSignInOrUp(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "tabbarController") as! UITabBarController
+        let vc = HomeTabBarController()
         self.navigationController?.pushViewController(vc, animated: true)
-        
     }
     
 }
-

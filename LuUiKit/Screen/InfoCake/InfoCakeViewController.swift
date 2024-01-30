@@ -2,15 +2,14 @@
 //  InfoCakeViewController.swift
 //  LuUiKit
 //
-//  Created by VN Savis on 08/01/2024.
+//  Created by VN Savis on 30/01/2024.
 //
 
 import UIKit
 
 class InfoCakeViewController: UIViewController {
-    
+
     @IBOutlet weak var labelDetalView: UIView!
-    @IBOutlet weak var labelDetal: UILabel!
     @IBOutlet weak var heightDesDetalInfo: NSLayoutConstraint!
 
     @IBOutlet weak var imageCake: UIImageView!

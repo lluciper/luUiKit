@@ -1,16 +1,17 @@
 //
-//  ItemOrderTableViewCell.swift
+//  HomeTableViewCell.swift
 //  LuUiKit
 //
-//  Created by VN Savis on 16/01/2024.
+//  Created by VN Savis on 30/01/2024.
 //
 
 import UIKit
 
-class ItemOrderTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var imgItem: UIImageView!
+class HomeTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var cakeLabel: UILabel!
+    @IBOutlet weak var cakeImage: UIImageView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,5 +22,5 @@ class ItemOrderTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }

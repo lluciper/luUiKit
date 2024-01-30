@@ -2,14 +2,13 @@
 //  RewardsViewController.swift
 //  LuUiKit
 //
-//  Created by VN Savis on 25/01/2024.
+//  Created by VN Savis on 30/01/2024.
 //
 
 import UIKit
 
 class RewardsViewController: UIViewController {
-    
-    
+
     @IBOutlet weak var view11: UIView!
     
     let yourView = UIView()
