@@ -13,6 +13,11 @@ class HomeTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpTabBarView()
+        selectTabBar()
+    }
+    
+    public func selectTabBar(_ index: Int = 0){
+        self.selectedIndex = index
     }
     
     private func setUpTabBarView(){

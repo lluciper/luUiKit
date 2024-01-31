@@ -96,6 +96,9 @@
                                             <real key="value" value="27"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="onAddToBag:" destination="-1" eventType="touchUpInside" id="zhf-Hl-hI1"/>
+                                    </connections>
                                 </button>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8Mx-0C-6u7">
                                     <rect key="frame" x="24" y="20" width="345" height="48"/>

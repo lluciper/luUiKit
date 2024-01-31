@@ -37,7 +37,7 @@ class InfoCakeViewController: UIViewController {
     }
     
     @IBAction func onAddToBag(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "bagViewController") as! BagViewController
+        let vc = BagViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

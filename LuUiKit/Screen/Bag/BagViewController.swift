@@ -20,6 +20,21 @@ class BagViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func onPlaceOrder(_ sender: Any) {
+        if let viewControllers = self.navigationController?.viewControllers {
+            for viewController in viewControllers {
+                if viewController is HomeTabBarController {
+                    let vc = viewController as! HomeTabBarController
+                    vc.selectTabBar(1)
+                    self.navPopToViewController(vc)
+                    break
+                }
+            }
+        }
+        
+    }
+    
 }
 
 extension BagViewController: UITableViewDataSource, UITableViewDelegate {

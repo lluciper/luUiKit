@@ -145,7 +145,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "infoCakeViewController") as! InfoCakeViewController
+        let vc = InfoCakeViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
