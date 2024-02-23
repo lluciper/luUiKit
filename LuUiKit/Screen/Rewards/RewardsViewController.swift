@@ -6,42 +6,92 @@
 //
 
 import UIKit
+import MTBBarcodeScanner
+import VisionKit
 
 class RewardsViewController: UIViewController {
-
-    @IBOutlet weak var view11: UIView!
     
-    let yourView = UIView()
+    var scannerAvailable: Bool {
+        if #available(iOS 16.0, *) {
+            return DataScannerViewController.isSupported && DataScannerViewController.isAvailable
+        } else {
+            return false
+        }
+    }
+    
+    @IBOutlet var previewView: UIView!
+    var scanner: MTBBarcodeScanner?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        yourView.frame = CGRect(x: 0, y: 0, width: 0, height: 20)
-//        yourView.backgroundColor = UIColor.blue
-//        view11.addSubview(yourView)
-//        yourView.layer.cornerRadius = 10
-//                // Gọi hàm thực hiện animation
-//        performAnimation()
+        
+        scanner = MTBBarcodeScanner(previewView: previewView)
+        
+        // Alternatively, limit the type of codes you can scan:
+        // scanner = MTBBarcodeScanner(metadataObjectTypes: [AVMetadataObject.ObjectType.qr.rawValue], previewView: previewView)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        yourView.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
-        yourView.backgroundColor = UIColor.blue
-        view11.addSubview(yourView)
-        yourView.layer.cornerRadius = 10
-                // Gọi hàm thực hiện animation
-        performAnimation()
-    }
-    
-    func performAnimation() {
-            // Tạo một gradient layer
-        UIView.animate(withDuration: 5.0, animations: {
-                    // Thiết lập kích thước mới cho view
-                    self.yourView.frame = CGRect(x: 0, y: 0, width: 200, height: 20)
-                }) { (finished) in
-                    // Animation đã hoàn thành, bạn có thể thêm xử lý sau khi hoàn thành nếu cần
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        MTBBarcodeScanner.requestCameraPermission(success: { success in
+            if success {
+                do {
+                    try self.scanner?.startScanning(resultBlock: { codes in
+                        if let codes = codes {
+                            for code in codes {
+                                let stringValue = code.stringValue!
+                                print("Found code: \(stringValue)")
+                            }
+                        }
+                    })
+                } catch {
+                    NSLog("Unable to start scanning")
                 }
+            } else {
+                //                    UIAlertView(title: "Scanning Unavailable", message: "This app does not have permission to access the camera", delegate: nil, cancelButtonTitle: nil, otherButtonTitles: "Ok").show()
+                print("Error")
+            }
+        })
+        
+    }
+    
+    @IBAction func onScanner(_ sender: Any) {
+        guard scannerAvailable == true else {
+            print("Error: gigi do")
+            return
         }
+        
+        if #available(iOS 16.0, *) {
+            let dataScanner = DataScannerViewController(recognizedDataTypes: [.text(), .barcode()], isHighlightingEnabled: true)
+                    dataScanner.delegate = self
+            present(dataScanner, animated: true) {
+                try? dataScanner.startScanning()
+            }
+        }
+    }
+    
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.scanner?.stopScanning()
+        
+        super.viewWillDisappear(animated)
+    }
+}
 
+extension RewardsViewController: DataScannerViewControllerDelegate {
+    
+    @available(iOS 16.0, *)
+    func dataScanner(_ dataScanner: DataScannerViewController, didTapOn item: RecognizedItem) {
+        switch item {
+        case .text(let text):
+            print("text: ", text)
+        case .barcode(let code):
+            guard let string = code.payloadStringValue else {return}
+            print("code string: ", string)
+        default:
+            print("default")
+        }
+    }
+    
 }

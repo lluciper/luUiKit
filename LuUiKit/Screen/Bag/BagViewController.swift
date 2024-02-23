@@ -51,7 +51,18 @@ extension BagViewController: UITableViewDataSource, UITableViewDelegate {
         cell.imgItem.layer.cornerRadius = 4
         cell.imgItem.clipsToBounds = true
         cell.imgItem.backgroundColor = UIColor(hexString: "FFE5E5")
+        
+        cell.dataView.layer.masksToBounds = false
+        cell.dataView.layer.cornerRadius = 20
+        cell.dataView.layer.shadowColor = UIColor.red.cgColor
+        cell.dataView.layer.shadowOffset = CGSize(width: 0, height: 2)
+        cell.dataView.layer.shadowOpacity = 0.1
+        cell.dataView.layer.shadowRadius = 1
+        cell.dataView.layer.shadowPath = UIBezierPath(roundedRect: cell.dataView.bounds, cornerRadius: cell.dataView.layer.cornerRadius).cgPath
+        cell.dataView.layer.shouldRasterize = true
+        cell.dataView.layer.rasterizationScale = UIScreen.main.scale
         cell.selectionStyle = .none
+
         return cell
     }
     

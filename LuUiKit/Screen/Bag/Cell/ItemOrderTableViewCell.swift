@@ -9,6 +9,7 @@ import UIKit
 
 class ItemOrderTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var dataView: UIView!
     @IBOutlet weak var imgItem: UIImageView!
 
     override func awakeFromNib() {

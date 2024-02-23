@@ -1,0 +1,16 @@
+PODS:
+  - MTBBarcodeScanner (5.0.11)
+
+DEPENDENCIES:
+  - MTBBarcodeScanner
+
+SPEC REPOS:
+  trunk:
+    - MTBBarcodeScanner
+
+SPEC CHECKSUMS:
+  MTBBarcodeScanner: f453b33c4b7dfe545d8c6484ed744d55671788cb
+
+PODFILE CHECKSUM: c67f55240a565d9997d03d816671efd86e492fcf
+
+COCOAPODS: 1.14.3

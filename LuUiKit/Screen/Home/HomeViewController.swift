@@ -9,8 +9,9 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    
-
+    @IBOutlet weak var viewDropLocation: UIView!
+    @IBOutlet weak var heightDropLocation: NSLayoutConstraint!
+    @IBOutlet weak var viewChooseLocation: UIView!
     @IBOutlet weak var cakeCollectionView: UICollectionView!{
         didSet {
             cakeCollectionView.register(UINib(nibName: "CakeCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CakeCollectionViewCell")
@@ -41,8 +42,46 @@ class HomeViewController: UIViewController {
         }
     }
     
+    var isHidern: Bool = true
+    
+    @objc func onShowDropDown () {
+        self.isHidern = !self.isHidern
+        if self.isHidern {
+            self.viewDropLocation.layer.masksToBounds = false
+            self.viewDropLocation.layer.cornerRadius = 20
+            self.viewDropLocation.layer.shadowColor = UIColor.red.cgColor
+            self.viewDropLocation.layer.shadowOffset = CGSize(width: 0, height: 2)
+            self.viewDropLocation.layer.shadowOpacity = 0
+            self.viewDropLocation.layer.shadowRadius = 1
+            self.viewDropLocation.layer.shadowPath = UIBezierPath(roundedRect: self.viewDropLocation.bounds, cornerRadius: self.viewDropLocation.layer.cornerRadius).cgPath
+            self.viewDropLocation.layer.shouldRasterize = true
+        }
+        UIView.animate(withDuration: 0.5, animations: {
+            if self.isHidern {
+                self.heightDropLocation.constant = 0
+            } else {
+                self.heightDropLocation.constant = 200
+            }
+            self.view.layoutIfNeeded()
+        }, completion: {_ in
+            self.viewDropLocation.layer.masksToBounds = false
+            self.viewDropLocation.layer.cornerRadius = 20
+            self.viewDropLocation.layer.shadowColor = UIColor.red.cgColor
+            self.viewDropLocation.layer.shadowOffset = CGSize(width: 0, height: 2)
+            self.viewDropLocation.layer.shadowOpacity = 0.1
+            self.viewDropLocation.layer.shadowRadius = 1
+            self.viewDropLocation.layer.shadowPath = UIBezierPath(roundedRect: self.viewDropLocation.bounds, cornerRadius: self.viewDropLocation.layer.cornerRadius).cgPath
+            self.viewDropLocation.layer.shouldRasterize = true
+        })
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tapShowDropDown = UITapGestureRecognizer(target: self, action: #selector(onShowDropDown))
+        
+        self.viewChooseLocation.addGestureRecognizer(tapShowDropDown)
+        
         cakeCollectionView.collectionViewLayout = UICollectionViewFlowLayout()
         
         self.onChangeMenu(1)

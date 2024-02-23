@@ -6,6 +6,7 @@
 //
 
 import UIKit
+//import IOSSecuritySuite
 
 class LoginViewController: UIViewController {
 
@@ -20,8 +21,43 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var tfConfirmPassword: TextField!
     @IBOutlet weak var btnSignInUp: UIButton!
     
+//    func isRunningOnSimulator() -> Bool {
+//        #if targetEnvironment(simulator)
+//            return true
+//        #else
+//            return false
+//        #endif
+//    }
+    
+    func listAllFonts() {
+        for family in UIFont.familyNames.sorted() {
+            print("Family: \(family)")
+            for font in UIFont.fontNames(forFamilyName: family).sorted() {
+                print("   Font: \(font)")
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        listAllFonts()
+//        if isRunningOnSimulator() {
+//            print("Ứng dụng đang chạy trên máy ảo (simulator).")
+//        } else {
+//            print("Ứng dụng đang chạy trên máy thật (physical device).")
+//        }
+//        
+//        if IOSSecuritySuite.amIJailbroken() {
+//            print("This device is jailbroken")
+//        } else {
+//            print("This device is not jailbroken")
+//        }
+//        
+//        if IOSSecuritySuite.amIRunInEmulator() {
+//            print("This is Emulator")
+//        } else {
+//            print("This is not Emulator")
+//        }
         
         self.navigationController?.isNavigationBarHidden = true
         

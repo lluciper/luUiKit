@@ -29,9 +29,11 @@ class OrderViewController: UIViewController {
     
     var order : [String] = ["aaaaa", "bbbbbb", "cccccc", "dddddd"]
     
+    var listItemOrder: [[String]] = [["aaa", "aaaa", "aaaaa"], ["bbb", "bbbb", "bbbbbb", "bbbb", "bbb"], ["ccc", "cccc", "cccccc", "cccc"]]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        onChangeStatusOder(.cooks)
+        onChangeStatusOder(.bags)
         
     }
     
@@ -90,7 +92,7 @@ class OrderViewController: UIViewController {
 
 extension OrderViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return order.count
+        return listItemOrder.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -107,12 +109,12 @@ extension OrderViewController: UITableViewDelegate, UITableViewDataSource {
         cell.dataView.layer.shouldRasterize = true
         cell.dataView.layer.rasterizationScale = UIScreen.main.scale
         cell.selectionStyle = .none
-        cell.labelOrder.text = order[indexPath.row]
+        cell.listItemLabel = listItemOrder[indexPath.row]
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return CGFloat((18 * listItemOrder[indexPath.row].count) > 80 ? (18 * listItemOrder[indexPath.row].count + 40) : 100)
     }
     
 }

@@ -16,8 +16,9 @@
                 <rect key="frame" x="0.0" y="0.0" width="345" height="100"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Jr-08-Lgi">
+                    <view contentMode="scaleToFill" id="0Jr-08-Lgi">
                         <rect key="frame" x="0.0" y="0.0" width="345" height="80"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5QJ-tE-jh8">
                                 <rect key="frame" x="255" y="0.0" width="90" height="80"/>
@@ -48,7 +49,6 @@
                                     <constraint firstAttribute="trailing" secondItem="k4E-vT-cCr" secondAttribute="trailing" constant="10" id="awu-I8-gsB"/>
                                     <constraint firstAttribute="width" constant="90" id="b38-HB-4DX"/>
                                     <constraint firstAttribute="trailing" secondItem="2yM-Pu-MRz" secondAttribute="trailing" constant="10" id="cNl-js-VNU"/>
-                                    <constraint firstItem="2yM-Pu-MRz" firstAttribute="top" secondItem="k4E-vT-cCr" secondAttribute="bottom" constant="20" id="iwn-Z1-ac6"/>
                                     <constraint firstItem="2yM-Pu-MRz" firstAttribute="leading" secondItem="5QJ-tE-jh8" secondAttribute="leading" constant="10" id="tJp-Be-CSU"/>
                                     <constraint firstItem="k4E-vT-cCr" firstAttribute="top" secondItem="5QJ-tE-jh8" secondAttribute="top" constant="10" id="yIr-g8-OVX"/>
                                 </constraints>
@@ -61,18 +61,17 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4U-FZ-GXP">
                                 <rect key="frame" x="0.0" y="0.0" width="255" height="80"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnG-5v-v7V">
-                                        <rect key="frame" x="10" y="10" width="245" height="14.333333333333336"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
-                                        <color key="textColor" red="0.087555624540000002" green="0.2988518476" blue="0.31085669989999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rh8-SP-xyH">
+                                        <rect key="frame" x="10" y="10" width="245" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="KnG-5v-v7V" secondAttribute="trailing" id="6jC-xf-9xl"/>
-                                    <constraint firstItem="KnG-5v-v7V" firstAttribute="leading" secondItem="Q4U-FZ-GXP" secondAttribute="leading" constant="10" id="Bwz-nY-G8Z"/>
-                                    <constraint firstItem="KnG-5v-v7V" firstAttribute="top" secondItem="Q4U-FZ-GXP" secondAttribute="top" constant="10" id="hgs-Vv-W0b"/>
+                                    <constraint firstItem="rh8-SP-xyH" firstAttribute="leading" secondItem="Q4U-FZ-GXP" secondAttribute="leading" constant="10" id="0tP-Lv-FNk"/>
+                                    <constraint firstAttribute="bottom" secondItem="rh8-SP-xyH" secondAttribute="bottom" constant="10" id="Z4I-cb-zXp"/>
+                                    <constraint firstItem="rh8-SP-xyH" firstAttribute="top" secondItem="Q4U-FZ-GXP" secondAttribute="top" constant="10" id="cC1-Xq-wjv"/>
+                                    <constraint firstAttribute="trailing" secondItem="rh8-SP-xyH" secondAttribute="trailing" id="rIg-Qs-usX"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="NGS_cornerRadius">
@@ -118,10 +117,10 @@
             <connections>
                 <outlet property="dataLeftView" destination="Q4U-FZ-GXP" id="Bn6-iX-onc"/>
                 <outlet property="dataRightView" destination="5QJ-tE-jh8" id="xU5-hw-B6E"/>
-                <outlet property="dataView" destination="0Jr-08-Lgi" id="BYo-sP-v7b"/>
-                <outlet property="labelOrder" destination="KnG-5v-v7V" id="y7C-fL-NkM"/>
+                <outlet property="dataView" destination="0Jr-08-Lgi" id="dzA-9D-sbi"/>
+                <outlet property="tableLabel" destination="rh8-SP-xyH" id="wPK-BI-fxe"/>
             </connections>
-            <point key="canvasLocation" x="-433" y="-108"/>
+            <point key="canvasLocation" x="-434.35114503816794" y="-108.45070422535211"/>
         </tableViewCell>
     </objects>
 </document>

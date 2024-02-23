@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39054FCB2B46535000887BAF /* ExtUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39054FCA2B46535000887BAF /* ExtUiViewController.swift */; };
+		39054FCB2B46535000887BAF /* ExtUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39054FCA2B46535000887BAF /* ExtUIViewController.swift */; };
 		390C09A32B68A5A100BDCE09 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C09A12B68A5A100BDCE09 /* LoginViewController.swift */; };
 		390C09A42B68A5A100BDCE09 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390C09A22B68A5A100BDCE09 /* LoginViewController.xib */; };
 		390C09B02B68ABF300BDCE09 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C09AE2B68ABF300BDCE09 /* HomeViewController.swift */; };
@@ -39,16 +39,21 @@
 		3931305D2B45105C0061B417 /* ExtUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3931305C2B45105C0061B417 /* ExtUIView.swift */; };
 		3931305F2B45429B0061B417 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3931305E2B45429B0061B417 /* AppColor.swift */; };
 		393130622B454CD70061B417 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393130612B454CD70061B417 /* TextField.swift */; };
+		397209472B872A3E005E828D /* ExtUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397209462B872A3E005E828D /* ExtUILabel.swift */; };
+		397DD13A2B87315B00DEC076 /* ExtUIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397DD1392B87315B00DEC076 /* ExtUIFont.swift */; };
 		3989892E2B62617E00133DDB /* EnumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3989892D2B62617E00133DDB /* EnumApp.swift */; };
-		3997A4C62B58E33B000101E9 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 3997A4C52B58E33B000101E9 /* RxCocoa */; };
-		3997A4CA2B58E33B000101E9 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 3997A4C92B58E33B000101E9 /* RxRelay */; };
-		3997A4CE2B58E33B000101E9 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3997A4CD2B58E33B000101E9 /* RxSwift */; };
+		39A29D332B82ECB800A9ECAE /* ItemLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A29D312B82ECB800A9ECAE /* ItemLabelTableViewCell.swift */; };
+		39A29D342B82ECB800A9ECAE /* ItemLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39A29D322B82ECB800A9ECAE /* ItemLabelTableViewCell.xib */; };
+		39AE44052B88908F00EB41C4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 39AE44042B88908F00EB41C4 /* Alamofire */; };
+		39AE44082B8890C500EB41C4 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 39AE44072B8890C500EB41C4 /* RxCocoa */; };
+		39AE440A2B8890C500EB41C4 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 39AE44092B8890C500EB41C4 /* RxSwift */; };
 		39B5F7B72B566FF9001471A9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 39B5F7B62B566FF9001471A9 /* Kingfisher */; };
 		39B5F7B92B56701D001471A9 /* ExtUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B5F7B82B56701D001471A9 /* ExtUIImageView.swift */; };
+		DEE5EF09BCEE39721D86B7B6 /* Pods_LuUiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B1598C4FC50AED5230D321 /* Pods_LuUiKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		39054FCA2B46535000887BAF /* ExtUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUiViewController.swift; sourceTree = "<group>"; };
+		39054FCA2B46535000887BAF /* ExtUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUIViewController.swift; sourceTree = "<group>"; };
 		390C09A12B68A5A100BDCE09 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		390C09A22B68A5A100BDCE09 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		390C09AE2B68ABF300BDCE09 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -82,8 +87,15 @@
 		3931305C2B45105C0061B417 /* ExtUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUIView.swift; sourceTree = "<group>"; };
 		3931305E2B45429B0061B417 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		393130612B454CD70061B417 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		397209462B872A3E005E828D /* ExtUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUILabel.swift; sourceTree = "<group>"; };
+		397DD1392B87315B00DEC076 /* ExtUIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUIFont.swift; sourceTree = "<group>"; };
 		3989892D2B62617E00133DDB /* EnumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumApp.swift; sourceTree = "<group>"; };
+		39A29D312B82ECB800A9ECAE /* ItemLabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemLabelTableViewCell.swift; sourceTree = "<group>"; };
+		39A29D322B82ECB800A9ECAE /* ItemLabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemLabelTableViewCell.xib; sourceTree = "<group>"; };
 		39B5F7B82B56701D001471A9 /* ExtUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUIImageView.swift; sourceTree = "<group>"; };
+		72B1598C4FC50AED5230D321 /* Pods_LuUiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuUiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74DEDA0F27A2478FB3C2C9EA /* Pods-LuUiKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuUiKit.release.xcconfig"; path = "Target Support Files/Pods-LuUiKit/Pods-LuUiKit.release.xcconfig"; sourceTree = "<group>"; };
+		9F410B5B1A02D6DAF9A277C1 /* Pods-LuUiKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuUiKit.debug.xcconfig"; path = "Target Support Files/Pods-LuUiKit/Pods-LuUiKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,16 +103,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3997A4CE2B58E33B000101E9 /* RxSwift in Frameworks */,
-				3997A4C62B58E33B000101E9 /* RxCocoa in Frameworks */,
-				3997A4CA2B58E33B000101E9 /* RxRelay in Frameworks */,
+				39AE44052B88908F00EB41C4 /* Alamofire in Frameworks */,
 				39B5F7B72B566FF9001471A9 /* Kingfisher in Frameworks */,
+				39AE440A2B8890C500EB41C4 /* RxSwift in Frameworks */,
+				39AE44082B8890C500EB41C4 /* RxCocoa in Frameworks */,
+				DEE5EF09BCEE39721D86B7B6 /* Pods_LuUiKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34962E49912C055C1F724266 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72B1598C4FC50AED5230D321 /* Pods_LuUiKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		390C099F2B68A57200BDCE09 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +149,7 @@
 		390C09AD2B68ABE400BDCE09 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				399B42882B84A5C40083920E /* DropDownCustom */,
 				390C09B22B68ACF000BDCE09 /* Cell */,
 				390C09AE2B68ABF300BDCE09 /* HomeViewController.swift */,
 				390C09AF2B68ABF300BDCE09 /* HomeViewController.xib */,
@@ -198,6 +220,8 @@
 			children = (
 				390C09D92B68E51500BDCE09 /* OrderTableViewCell.swift */,
 				390C09DA2B68E51500BDCE09 /* OrderTableViewCell.xib */,
+				39A29D312B82ECB800A9ECAE /* ItemLabelTableViewCell.swift */,
+				39A29D322B82ECB800A9ECAE /* ItemLabelTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -224,6 +248,8 @@
 			children = (
 				393130442B4502C50061B417 /* LuUiKit */,
 				393130432B4502C50061B417 /* Products */,
+				AD5D3DFBBC1F49D38D468AC2 /* Pods */,
+				34962E49912C055C1F724266 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -257,8 +283,10 @@
 			children = (
 				393130592B4503D30061B417 /* ExtUIColor.swift */,
 				3931305C2B45105C0061B417 /* ExtUIView.swift */,
-				39054FCA2B46535000887BAF /* ExtUiViewController.swift */,
+				39054FCA2B46535000887BAF /* ExtUIViewController.swift */,
 				39B5F7B82B56701D001471A9 /* ExtUIImageView.swift */,
+				397209462B872A3E005E828D /* ExtUILabel.swift */,
+				397DD1392B87315B00DEC076 /* ExtUIFont.swift */,
 			);
 			path = Ext;
 			sourceTree = "<group>";
@@ -279,6 +307,22 @@
 			path = Untils;
 			sourceTree = "<group>";
 		};
+		399B42882B84A5C40083920E /* DropDownCustom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DropDownCustom;
+			sourceTree = "<group>";
+		};
+		AD5D3DFBBC1F49D38D468AC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F410B5B1A02D6DAF9A277C1 /* Pods-LuUiKit.debug.xcconfig */,
+				74DEDA0F27A2478FB3C2C9EA /* Pods-LuUiKit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -286,9 +330,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 393130562B4502C60061B417 /* Build configuration list for PBXNativeTarget "LuUiKit" */;
 			buildPhases = (
+				A0197218F4416F179050CAC4 /* [CP] Check Pods Manifest.lock */,
 				3931303E2B4502C50061B417 /* Sources */,
 				3931303F2B4502C50061B417 /* Frameworks */,
 				393130402B4502C50061B417 /* Resources */,
+				32B7B77F02B3CDC2EBF98C65 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -297,9 +343,9 @@
 			name = LuUiKit;
 			packageProductDependencies = (
 				39B5F7B62B566FF9001471A9 /* Kingfisher */,
-				3997A4C52B58E33B000101E9 /* RxCocoa */,
-				3997A4C92B58E33B000101E9 /* RxRelay */,
-				3997A4CD2B58E33B000101E9 /* RxSwift */,
+				39AE44042B88908F00EB41C4 /* Alamofire */,
+				39AE44072B8890C500EB41C4 /* RxCocoa */,
+				39AE44092B8890C500EB41C4 /* RxSwift */,
 			);
 			productName = LuUiKit;
 			productReference = 393130422B4502C50061B417 /* LuUiKit.app */;
@@ -331,7 +377,8 @@
 			mainGroup = 393130392B4502C50061B417;
 			packageReferences = (
 				39B5F7B52B566FF9001471A9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				3997A4C42B58E33B000101E9 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				39AE44032B88908F00EB41C4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				39AE44062B8890C500EB41C4 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 393130432B4502C50061B417 /* Products */;
 			projectDirPath = "";
@@ -350,6 +397,7 @@
 				390C09C42B68D8C700BDCE09 /* InfoCakeViewController.xib in Resources */,
 				390C09A42B68A5A100BDCE09 /* LoginViewController.xib in Resources */,
 				393130522B4502C60061B417 /* LaunchScreen.storyboard in Resources */,
+				39A29D342B82ECB800A9ECAE /* ItemLabelTableViewCell.xib in Resources */,
 				390C09B12B68ABF300BDCE09 /* HomeViewController.xib in Resources */,
 				3931304F2B4502C60061B417 /* Assets.xcassets in Resources */,
 				390C09CE2B68DC6000BDCE09 /* ItemOrderTableViewCell.xib in Resources */,
@@ -365,13 +413,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32B7B77F02B3CDC2EBF98C65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LuUiKit/Pods-LuUiKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LuUiKit/Pods-LuUiKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LuUiKit/Pods-LuUiKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0197218F4416F179050CAC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LuUiKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3931303E2B4502C50061B417 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				397DD13A2B87315B00DEC076 /* ExtUIFont.swift in Sources */,
 				390C09A32B68A5A100BDCE09 /* LoginViewController.swift in Sources */,
-				39054FCB2B46535000887BAF /* ExtUiViewController.swift in Sources */,
+				39054FCB2B46535000887BAF /* ExtUIViewController.swift in Sources */,
 				390C09E42B68F44C00BDCE09 /* HomeTabBarController.swift in Sources */,
 				3931305A2B4503D30061B417 /* ExtUIColor.swift in Sources */,
 				390C09DB2B68E51500BDCE09 /* OrderTableViewCell.swift in Sources */,
@@ -381,11 +472,13 @@
 				390C09C82B68DBE700BDCE09 /* BagViewController.swift in Sources */,
 				390C09BE2B68D7E000BDCE09 /* AccountViewController.swift in Sources */,
 				3989892E2B62617E00133DDB /* EnumApp.swift in Sources */,
+				39A29D332B82ECB800A9ECAE /* ItemLabelTableViewCell.swift in Sources */,
 				393130622B454CD70061B417 /* TextField.swift in Sources */,
 				390C09C32B68D8C700BDCE09 /* InfoCakeViewController.swift in Sources */,
 				393130482B4502C50061B417 /* SceneDelegate.swift in Sources */,
 				390C09B52B68ADD600BDCE09 /* HomeTableViewCell.swift in Sources */,
 				390C09E02B68E79D00BDCE09 /* RewardsViewController.swift in Sources */,
+				397209472B872A3E005E828D /* ExtUILabel.swift in Sources */,
 				390C09CD2B68DC6000BDCE09 /* ItemOrderTableViewCell.swift in Sources */,
 				390C09D22B68E42300BDCE09 /* OrderViewController.swift in Sources */,
 				3931305D2B45105C0061B417 /* ExtUIView.swift in Sources */,
@@ -524,6 +617,7 @@
 		};
 		393130572B4502C60061B417 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F410B5B1A02D6DAF9A277C1 /* Pods-LuUiKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -532,6 +626,7 @@
 				DEVELOPMENT_TEAM = 35LAV63L4K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LuUiKit/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Can we access your camera in order to scan barcodes?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -552,6 +647,7 @@
 		};
 		393130582B4502C60061B417 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74DEDA0F27A2478FB3C2C9EA /* Pods-LuUiKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -560,6 +656,7 @@
 				DEVELOPMENT_TEAM = 35LAV63L4K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LuUiKit/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Can we access your camera in order to scan barcodes?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -602,12 +699,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3997A4C42B58E33B000101E9 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		39AE44032B88908F00EB41C4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+		39AE44062B8890C500EB41C4 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 6.6.0;
+				minimumVersion = 6.0.0;
 			};
 		};
 		39B5F7B52B566FF9001471A9 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
@@ -621,19 +726,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3997A4C52B58E33B000101E9 /* RxCocoa */ = {
+		39AE44042B88908F00EB41C4 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3997A4C42B58E33B000101E9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = 39AE44032B88908F00EB41C4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		39AE44072B8890C500EB41C4 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39AE44062B8890C500EB41C4 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
 		};
-		3997A4C92B58E33B000101E9 /* RxRelay */ = {
+		39AE44092B8890C500EB41C4 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3997A4C42B58E33B000101E9 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		3997A4CD2B58E33B000101E9 /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3997A4C42B58E33B000101E9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = 39AE44062B8890C500EB41C4 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
 		};
 		39B5F7B62B566FF9001471A9 /* Kingfisher */ = {

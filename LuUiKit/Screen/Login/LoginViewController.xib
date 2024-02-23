@@ -30,7 +30,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="bg_login" id="YTm-r4-1Fj">
-                    <rect key="frame" x="-4" y="-4" width="396" height="854"/>
+                    <rect key="frame" x="-4" y="-4" width="397" height="854"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
                 <view contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZpL-DG-7Kn">
@@ -390,7 +390,7 @@
                 <constraint firstItem="ZpL-DG-7Kn" firstAttribute="centerY" secondItem="xbj-em-pnM" secondAttribute="centerY" id="3M3-hn-ONH"/>
                 <constraint firstItem="ZpL-DG-7Kn" firstAttribute="centerX" secondItem="xbj-em-pnM" secondAttribute="centerX" id="oXp-FY-AHS"/>
             </constraints>
-            <point key="canvasLocation" x="-482" y="-541"/>
+            <point key="canvasLocation" x="-483.20610687022901" y="-541.54929577464793"/>
         </view>
     </objects>
     <resources>

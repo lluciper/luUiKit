@@ -12,6 +12,8 @@ class HomeTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBar.backgroundColor = UIColor.white
+        self.tabBar.barTintColor = UIColor.white
         setUpTabBarView()
         selectTabBar()
     }
@@ -47,7 +49,7 @@ class HomeTabBarController: UITabBarController {
 //        navRewards.isNavigationBarHidden = true
 //        navAccount.isNavigationBarHidden = true
         
-        tabBar.tintColor = .red
+        tabBar.tintColor = UIColor(hexString: "FF9666")
         
         setViewControllers([vcHome, vcOrder, vcRewards, vcAccount], animated: true)
     }
