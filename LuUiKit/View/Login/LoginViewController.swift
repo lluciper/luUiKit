@@ -7,6 +7,7 @@
 
 import UIKit
 //import IOSSecuritySuite
+import RxSwift
 
 class LoginViewController: UIViewController {
 
@@ -29,18 +30,13 @@ class LoginViewController: UIViewController {
 //        #endif
 //    }
     
-    func listAllFonts() {
-        for family in UIFont.familyNames.sorted() {
-            print("Family: \(family)")
-            for font in UIFont.fontNames(forFamilyName: family).sorted() {
-                print("   Font: \(font)")
-            }
-        }
-    }
+    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        listAllFonts()
+        
+        setUpNSLocalizedString()
+
 //        if isRunningOnSimulator() {
 //            print("Ứng dụng đang chạy trên máy ảo (simulator).")
 //        } else {
@@ -67,6 +63,11 @@ class LoginViewController: UIViewController {
         let tapViewSignUp = UITapGestureRecognizer(target: self, action: #selector(onChooseSignUp(_:)))
         self.viewSignIn.addGestureRecognizer(tapViewSignIn)
         self.viewSignUp.addGestureRecognizer(tapViewSignUp)
+    }
+    
+    func setUpNSLocalizedString(){
+        labelSignIn.text = AppLocalizable.signIn.localized
+        labelSignup.text = AppLocalizable.signUp.localized
     }
     
     func setupView(){

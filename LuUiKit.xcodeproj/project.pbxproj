@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3901E19D2B8C3E75006B7CA7 /* HelpCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3901E19B2B8C3E75006B7CA7 /* HelpCenterViewController.swift */; };
+		3901E19E2B8C3E75006B7CA7 /* HelpCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3901E19C2B8C3E75006B7CA7 /* HelpCenterViewController.xib */; };
 		39054FCB2B46535000887BAF /* ExtUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39054FCA2B46535000887BAF /* ExtUIViewController.swift */; };
 		390C09A32B68A5A100BDCE09 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C09A12B68A5A100BDCE09 /* LoginViewController.swift */; };
 		390C09A42B68A5A100BDCE09 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390C09A22B68A5A100BDCE09 /* LoginViewController.xib */; };
@@ -31,6 +33,8 @@
 		390C09E02B68E79D00BDCE09 /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C09DE2B68E79D00BDCE09 /* RewardsViewController.swift */; };
 		390C09E12B68E79D00BDCE09 /* RewardsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390C09DF2B68E79D00BDCE09 /* RewardsViewController.xib */; };
 		390C09E42B68F44C00BDCE09 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C09E32B68F44C00BDCE09 /* HomeTabBarController.swift */; };
+		392472652B8DBC49005C131F /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392472642B8DBC49005C131F /* BaseViewModel.swift */; };
+		392472682B8DCF6A005C131F /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392472672B8DCF6A005C131F /* TokenModel.swift */; };
 		393130462B4502C50061B417 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393130452B4502C50061B417 /* AppDelegate.swift */; };
 		393130482B4502C50061B417 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393130472B4502C50061B417 /* SceneDelegate.swift */; };
 		3931304F2B4502C60061B417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3931304E2B4502C60061B417 /* Assets.xcassets */; };
@@ -44,15 +48,21 @@
 		3989892E2B62617E00133DDB /* EnumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3989892D2B62617E00133DDB /* EnumApp.swift */; };
 		39A29D332B82ECB800A9ECAE /* ItemLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A29D312B82ECB800A9ECAE /* ItemLabelTableViewCell.swift */; };
 		39A29D342B82ECB800A9ECAE /* ItemLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39A29D322B82ECB800A9ECAE /* ItemLabelTableViewCell.xib */; };
+		39A87D4E2B9181C100DD4C45 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39A87D502B9181C100DD4C45 /* Localizable.strings */; };
+		39A87D562B91848200DD4C45 /* AppLocalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A87D552B91848200DD4C45 /* AppLocalizable.swift */; };
 		39AE44052B88908F00EB41C4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 39AE44042B88908F00EB41C4 /* Alamofire */; };
 		39AE44082B8890C500EB41C4 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 39AE44072B8890C500EB41C4 /* RxCocoa */; };
 		39AE440A2B8890C500EB41C4 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 39AE44092B8890C500EB41C4 /* RxSwift */; };
 		39B5F7B72B566FF9001471A9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 39B5F7B62B566FF9001471A9 /* Kingfisher */; };
 		39B5F7B92B56701D001471A9 /* ExtUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B5F7B82B56701D001471A9 /* ExtUIImageView.swift */; };
+		39C5818E2B8ED6560025593E /* AlamofireInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C5818D2B8ED6560025593E /* AlamofireInterceptor.swift */; };
+		39C581902B8F12960025593E /* TestListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C5818F2B8F12960025593E /* TestListDataModel.swift */; };
 		DEE5EF09BCEE39721D86B7B6 /* Pods_LuUiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B1598C4FC50AED5230D321 /* Pods_LuUiKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3901E19B2B8C3E75006B7CA7 /* HelpCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCenterViewController.swift; sourceTree = "<group>"; };
+		3901E19C2B8C3E75006B7CA7 /* HelpCenterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpCenterViewController.xib; sourceTree = "<group>"; };
 		39054FCA2B46535000887BAF /* ExtUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUIViewController.swift; sourceTree = "<group>"; };
 		390C09A12B68A5A100BDCE09 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		390C09A22B68A5A100BDCE09 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -77,6 +87,8 @@
 		390C09DE2B68E79D00BDCE09 /* RewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
 		390C09DF2B68E79D00BDCE09 /* RewardsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardsViewController.xib; sourceTree = "<group>"; };
 		390C09E32B68F44C00BDCE09 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		392472642B8DBC49005C131F /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		392472672B8DCF6A005C131F /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
 		393130422B4502C50061B417 /* LuUiKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuUiKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		393130452B4502C50061B417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		393130472B4502C50061B417 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,7 +104,13 @@
 		3989892D2B62617E00133DDB /* EnumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumApp.swift; sourceTree = "<group>"; };
 		39A29D312B82ECB800A9ECAE /* ItemLabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemLabelTableViewCell.swift; sourceTree = "<group>"; };
 		39A29D322B82ECB800A9ECAE /* ItemLabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemLabelTableViewCell.xib; sourceTree = "<group>"; };
+		39A87D4F2B9181C100DD4C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		39A87D532B91835E00DD4C45 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		39A87D552B91848200DD4C45 /* AppLocalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLocalizable.swift; sourceTree = "<group>"; };
+		39A87D572B91C00D00DD4C45 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		39B5F7B82B56701D001471A9 /* ExtUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUIImageView.swift; sourceTree = "<group>"; };
+		39C5818D2B8ED6560025593E /* AlamofireInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireInterceptor.swift; sourceTree = "<group>"; };
+		39C5818F2B8F12960025593E /* TestListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListDataModel.swift; sourceTree = "<group>"; };
 		72B1598C4FC50AED5230D321 /* Pods_LuUiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuUiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DEDA0F27A2478FB3C2C9EA /* Pods-LuUiKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuUiKit.release.xcconfig"; path = "Target Support Files/Pods-LuUiKit/Pods-LuUiKit.release.xcconfig"; sourceTree = "<group>"; };
 		9F410B5B1A02D6DAF9A277C1 /* Pods-LuUiKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuUiKit.debug.xcconfig"; path = "Target Support Files/Pods-LuUiKit/Pods-LuUiKit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,9 +140,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		390C099F2B68A57200BDCE09 /* Screen */ = {
+		3901E19A2B8C3E31006B7CA7 /* Help Center */ = {
 			isa = PBXGroup;
 			children = (
+				3901E19B2B8C3E75006B7CA7 /* HelpCenterViewController.swift */,
+				3901E19C2B8C3E75006B7CA7 /* HelpCenterViewController.xib */,
+			);
+			path = "Help Center";
+			sourceTree = "<group>";
+		};
+		390C099F2B68A57200BDCE09 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3901E19A2B8C3E31006B7CA7 /* Help Center */,
 				390C09DD2B68E73000BDCE09 /* Rewards */,
 				390C09CF2B68E40700BDCE09 /* Order */,
 				390C09C52B68DBCF00BDCE09 /* Bag */,
@@ -134,7 +162,7 @@
 				390C09A02B68A57E00BDCE09 /* Login */,
 				390C09E32B68F44C00BDCE09 /* HomeTabBarController.swift */,
 			);
-			path = Screen;
+			path = View;
 			sourceTree = "<group>";
 		};
 		390C09A02B68A57E00BDCE09 /* Login */ = {
@@ -243,6 +271,23 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		392472632B8D8397005C131F /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				392472642B8DBC49005C131F /* BaseViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		392472662B8DCF0F005C131F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				392472672B8DCF6A005C131F /* TokenModel.swift */,
+				39C5818F2B8F12960025593E /* TestListDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		393130392B4502C50061B417 = {
 			isa = PBXGroup;
 			children = (
@@ -264,8 +309,12 @@
 		393130442B4502C50061B417 /* LuUiKit */ = {
 			isa = PBXGroup;
 			children = (
+				39A87D4B2B9180FF00DD4C45 /* Localizable */,
+				39C5818C2B8ED5CD0025593E /* Service */,
+				392472662B8DCF0F005C131F /* Model */,
+				392472632B8D8397005C131F /* View Model */,
 				390C09E22B68EA9E00BDCE09 /* Config */,
-				390C099F2B68A57200BDCE09 /* Screen */,
+				390C099F2B68A57200BDCE09 /* View */,
 				3989892C2B62615800133DDB /* Untils */,
 				393130602B454C8D0061B417 /* Components */,
 				3931305B2B4510420061B417 /* Ext */,
@@ -312,6 +361,23 @@
 			children = (
 			);
 			path = DropDownCustom;
+			sourceTree = "<group>";
+		};
+		39A87D4B2B9180FF00DD4C45 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				39A87D502B9181C100DD4C45 /* Localizable.strings */,
+				39A87D552B91848200DD4C45 /* AppLocalizable.swift */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		39C5818C2B8ED5CD0025593E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				39C5818D2B8ED6560025593E /* AlamofireInterceptor.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		AD5D3DFBBC1F49D38D468AC2 /* Pods */ = {
@@ -373,6 +439,7 @@
 			knownRegions = (
 				en,
 				Base,
+				vi,
 			);
 			mainGroup = 393130392B4502C50061B417;
 			packageReferences = (
@@ -406,6 +473,8 @@
 				390C09B62B68ADD600BDCE09 /* HomeTableViewCell.xib in Resources */,
 				390C09E12B68E79D00BDCE09 /* RewardsViewController.xib in Resources */,
 				390C09BF2B68D7E000BDCE09 /* AccountViewController.xib in Resources */,
+				3901E19E2B8C3E75006B7CA7 /* HelpCenterViewController.xib in Resources */,
+				39A87D4E2B9181C100DD4C45 /* Localizable.strings in Resources */,
 				390C09BA2B68D27600BDCE09 /* CakeCollectionViewCell.xib in Resources */,
 				390C09DC2B68E51500BDCE09 /* OrderTableViewCell.xib in Resources */,
 			);
@@ -460,14 +529,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39C5818E2B8ED6560025593E /* AlamofireInterceptor.swift in Sources */,
 				397DD13A2B87315B00DEC076 /* ExtUIFont.swift in Sources */,
+				392472682B8DCF6A005C131F /* TokenModel.swift in Sources */,
 				390C09A32B68A5A100BDCE09 /* LoginViewController.swift in Sources */,
 				39054FCB2B46535000887BAF /* ExtUIViewController.swift in Sources */,
 				390C09E42B68F44C00BDCE09 /* HomeTabBarController.swift in Sources */,
 				3931305A2B4503D30061B417 /* ExtUIColor.swift in Sources */,
 				390C09DB2B68E51500BDCE09 /* OrderTableViewCell.swift in Sources */,
 				393130462B4502C50061B417 /* AppDelegate.swift in Sources */,
+				39C581902B8F12960025593E /* TestListDataModel.swift in Sources */,
+				392472652B8DBC49005C131F /* BaseViewModel.swift in Sources */,
 				390C09B02B68ABF300BDCE09 /* HomeViewController.swift in Sources */,
+				39A87D562B91848200DD4C45 /* AppLocalizable.swift in Sources */,
 				390C09B92B68D27600BDCE09 /* CakeCollectionViewCell.swift in Sources */,
 				390C09C82B68DBE700BDCE09 /* BagViewController.swift in Sources */,
 				390C09BE2B68D7E000BDCE09 /* AccountViewController.swift in Sources */,
@@ -481,6 +555,7 @@
 				397209472B872A3E005E828D /* ExtUILabel.swift in Sources */,
 				390C09CD2B68DC6000BDCE09 /* ItemOrderTableViewCell.swift in Sources */,
 				390C09D22B68E42300BDCE09 /* OrderViewController.swift in Sources */,
+				3901E19D2B8C3E75006B7CA7 /* HelpCenterViewController.swift in Sources */,
 				3931305D2B45105C0061B417 /* ExtUIView.swift in Sources */,
 				3931305F2B45429B0061B417 /* AppColor.swift in Sources */,
 				39B5F7B92B56701D001471A9 /* ExtUIImageView.swift in Sources */,
@@ -494,8 +569,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				393130512B4502C60061B417 /* Base */,
+				39A87D532B91835E00DD4C45 /* vi */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		39A87D502B9181C100DD4C45 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39A87D4F2B9181C100DD4C45 /* en */,
+				39A87D572B91C00D00DD4C45 /* vi */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -505,6 +590,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -565,6 +651,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -712,7 +799,7 @@
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
+				minimumVersion = 6.6.0;
 			};
 		};
 		39B5F7B52B566FF9001471A9 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {

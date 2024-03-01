@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  LuUiKit
+
+  Created by VN Savis on 01/03/2024.
+  
+*/
+
+"signIn" = "SignIn";
+"signUp" = "SignUp";
+"email" = "Email";
+"password" = "Password";

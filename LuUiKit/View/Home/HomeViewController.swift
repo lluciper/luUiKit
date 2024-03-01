@@ -6,8 +6,15 @@
 //
 
 import UIKit
+import RxSwift
 
 class HomeViewController: UIViewController {
+    let baseView = BaseViewModel()
+    let disposeBag = DisposeBag()
+    var listImageCake: [String] = ["Location", "Location", "Location", "Location", "Location"]
+    var listNameCake: [String] = ["Donut1", "Donut2", "Donut3", "Donut4", "Donut5"]
+    var listPriceCake: [String] = ["$ 1.00", "$ 2.00", "$ 3.00", "$ 4.00", "$ 5.00"]
+    var drink : [String] = ["aaaaa", "bbbbbb", "cccccc", "dddddd"]
     
     @IBOutlet weak var viewDropLocation: UIView!
     @IBOutlet weak var heightDropLocation: NSLayoutConstraint!
@@ -15,15 +22,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var cakeCollectionView: UICollectionView!{
         didSet {
             cakeCollectionView.register(UINib(nibName: "CakeCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CakeCollectionViewCell")
-            cakeCollectionView.dataSource = self
-            cakeCollectionView.delegate = self
         }
     }
-    var listImageCake: [String] = ["Location", "Location", "Location", "Location", "Location"]
-    var listNameCake: [String] = ["Donut1", "Donut2", "Donut3", "Donut4", "Donut5"]
-    var listPriceCake: [String] = ["$ 1.00", "$ 2.00", "$ 3.00", "$ 4.00", "$ 5.00"]
-    
-    var drink : [String] = ["aaaaa", "bbbbbb", "cccccc", "dddddd"]
     
     @IBOutlet weak var drinkStackView: UIStackView!
     @IBOutlet weak var donutsView: UIView!
@@ -42,9 +42,48 @@ class HomeViewController: UIViewController {
         }
     }
     
+    func bindTableView(){
+        cakeCollectionView.rx.setDelegate(self).disposed(by: disposeBag)
+        baseView.listDataTest.bind(to: cakeCollectionView.rx.items(cellIdentifier: "CakeCollectionViewCell", cellType: CakeCollectionViewCell.self)){(row, item, cell) in
+            let imageURLString = "https://i.pinimg.com/originals/42/6b/d9/426bd99833a838b008ca06582d4d5b5e.jpg"
+            cell.imageCake.setImage(imageURLString)
+            cell.imageCake.layer.cornerRadius = 8
+            cell.imageCake.clipsToBounds = true
+            cell.nameCake.text = "\(item.id ?? 0)"
+            cell.priceCake.text = "\(item.id ?? 0)"
+        }.disposed(by: disposeBag)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        baseView.getDataTest()
+        bindTableView()
+        let tapShowDropDown = UITapGestureRecognizer(target: self, action: #selector(onShowDropDown))
+        
+        self.viewChooseLocation.addGestureRecognizer(tapShowDropDown)
+        
+        cakeCollectionView.collectionViewLayout = UICollectionViewFlowLayout()
+        
+        self.onChangeMenu(1)
+        
+        if let layout = cakeCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            layout.scrollDirection = .horizontal
+        }
+        
+        let tapHotDrinksView = UITapGestureRecognizer(target: self, action: #selector(onChooseHotDrinks(_:)))
+        let tapIcedDrinksView = UITapGestureRecognizer(target: self, action: #selector(onChooseIcedDrinks(_:)))
+        let tapDonutsView = UITapGestureRecognizer(target: self, action: #selector(onChooseDonutsDrinks(_:)))
+        
+        self.hotDrinksView.addGestureRecognizer(tapHotDrinksView)
+        self.icedDrinksView.addGestureRecognizer(tapIcedDrinksView)
+        self.donutsView.addGestureRecognizer(tapDonutsView)
+    }
+    
     var isHidern: Bool = true
     
     @objc func onShowDropDown () {
+        baseView.searchData2()
+        
         self.isHidern = !self.isHidern
         if self.isHidern {
             self.viewDropLocation.layer.masksToBounds = false
@@ -73,30 +112,6 @@ class HomeViewController: UIViewController {
             self.viewDropLocation.layer.shadowPath = UIBezierPath(roundedRect: self.viewDropLocation.bounds, cornerRadius: self.viewDropLocation.layer.cornerRadius).cgPath
             self.viewDropLocation.layer.shouldRasterize = true
         })
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        let tapShowDropDown = UITapGestureRecognizer(target: self, action: #selector(onShowDropDown))
-        
-        self.viewChooseLocation.addGestureRecognizer(tapShowDropDown)
-        
-        cakeCollectionView.collectionViewLayout = UICollectionViewFlowLayout()
-        
-        self.onChangeMenu(1)
-        
-        if let layout = cakeCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-            layout.scrollDirection = .horizontal
-        }
-        
-        let tapHotDrinksView = UITapGestureRecognizer(target: self, action: #selector(onChooseHotDrinks(_:)))
-        let tapIcedDrinksView = UITapGestureRecognizer(target: self, action: #selector(onChooseIcedDrinks(_:)))
-        let tapDonutsView = UITapGestureRecognizer(target: self, action: #selector(onChooseDonutsDrinks(_:)))
-        
-        self.hotDrinksView.addGestureRecognizer(tapHotDrinksView)
-        self.icedDrinksView.addGestureRecognizer(tapIcedDrinksView)
-        self.donutsView.addGestureRecognizer(tapDonutsView)
     }
     
     @objc func onChooseHotDrinks (_ sender: UITapGestureRecognizer) {
@@ -128,32 +143,16 @@ class HomeViewController: UIViewController {
     
 }
 
-
-extension HomeViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return listNameCake.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CakeCollectionViewCell", for: indexPath) as! CakeCollectionViewCell
-        let imageURLString = "https://i.pinimg.com/originals/42/6b/d9/426bd99833a838b008ca06582d4d5b5e.jpg"
-        cell.imageCake.setImage(imageURLString)
-        cell.imageCake.layer.cornerRadius = 8
-        cell.imageCake.clipsToBounds = true
-        cell.nameCake.text = listNameCake[indexPath.row]
-        cell.priceCake.text = listPriceCake[indexPath.row]
-        return cell
-    }
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 174, height: 234)
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        
+
         print("\(listNameCake.count) == \(section)")
-        
+
         if listNameCake.count == section - 1 {
             return UIEdgeInsets(top: 0, left: 18, bottom: 0, right: 24)
         } else if section == 0 {

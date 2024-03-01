@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountViewController" customModule="LuUiKit" customModuleProvider="target">
             <connections>
+                <outlet property="helpCenterView" destination="mud-Vp-3I8" id="xYs-BC-ykF"/>
                 <outlet property="imgAccount" destination="YVN-uj-mHO" id="0G4-aT-1Dg"/>
                 <outlet property="view" destination="m8C-y2-4q0" id="pD7-Tc-HRF"/>
             </connections>
