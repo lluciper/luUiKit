@@ -35,6 +35,7 @@
 		390C09E42B68F44C00BDCE09 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C09E32B68F44C00BDCE09 /* HomeTabBarController.swift */; };
 		392472652B8DBC49005C131F /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392472642B8DBC49005C131F /* BaseViewModel.swift */; };
 		392472682B8DCF6A005C131F /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392472672B8DCF6A005C131F /* TokenModel.swift */; };
+		392657602B92BEF3000B5FB4 /* ExtString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3926575F2B92BEF3000B5FB4 /* ExtString.swift */; };
 		393130462B4502C50061B417 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393130452B4502C50061B417 /* AppDelegate.swift */; };
 		393130482B4502C50061B417 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393130472B4502C50061B417 /* SceneDelegate.swift */; };
 		3931304F2B4502C60061B417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3931304E2B4502C60061B417 /* Assets.xcassets */; };
@@ -89,6 +90,7 @@
 		390C09E32B68F44C00BDCE09 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		392472642B8DBC49005C131F /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		392472672B8DCF6A005C131F /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
+		3926575F2B92BEF3000B5FB4 /* ExtString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtString.swift; sourceTree = "<group>"; };
 		393130422B4502C50061B417 /* LuUiKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuUiKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		393130452B4502C50061B417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		393130472B4502C50061B417 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -336,6 +338,7 @@
 				39B5F7B82B56701D001471A9 /* ExtUIImageView.swift */,
 				397209462B872A3E005E828D /* ExtUILabel.swift */,
 				397DD1392B87315B00DEC076 /* ExtUIFont.swift */,
+				3926575F2B92BEF3000B5FB4 /* ExtString.swift */,
 			);
 			path = Ext;
 			sourceTree = "<group>";
@@ -544,6 +547,7 @@
 				39A87D562B91848200DD4C45 /* AppLocalizable.swift in Sources */,
 				390C09B92B68D27600BDCE09 /* CakeCollectionViewCell.swift in Sources */,
 				390C09C82B68DBE700BDCE09 /* BagViewController.swift in Sources */,
+				392657602B92BEF3000B5FB4 /* ExtString.swift in Sources */,
 				390C09BE2B68D7E000BDCE09 /* AccountViewController.swift in Sources */,
 				3989892E2B62617E00133DDB /* EnumApp.swift in Sources */,
 				39A29D332B82ECB800A9ECAE /* ItemLabelTableViewCell.swift in Sources */,

@@ -98,6 +98,7 @@ class LoginViewController: UIViewController {
     }
     
     @objc func onChooseSignIn (_ sender: UITapGestureRecognizer) {
+        UserDefaults.standard.setValue("en", forKey: LocalizeDefaultLanguageKey)
         UIView.animate(withDuration: 0.1, animations: {
             sender.view?.backgroundColor = AppColor.origin
         }) { (completed) in
@@ -106,6 +107,7 @@ class LoginViewController: UIViewController {
     }
     
     @objc func onChooseSignUp (_ sender: UITapGestureRecognizer) {
+        UserDefaults.standard.setValue("vi", forKey: LocalizeDefaultLanguageKey)
         UIView.animate(withDuration: 0.1, animations: {
             sender.view?.backgroundColor = AppColor.origin
         }) { (completed) in

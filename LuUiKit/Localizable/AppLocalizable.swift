@@ -7,6 +7,8 @@
 
 import Foundation
 
+let LocalizeDefaultLanguageKey: String = "LocalizeDefaultLanguageKey"
+
 enum AppLocalizable: String {
     case signIn
     case signUp
@@ -14,7 +16,10 @@ enum AppLocalizable: String {
     case password
     
     var localized: String {
-        NSLocalizedString("\(rawValue)", comment: "")
+        if let path = Bundle.main.path(forResource: UserDefaults.standard.string(forKey: LocalizeDefaultLanguageKey) ?? "en", ofType: "lproj"), let bundle = Bundle(path: path){
+            return NSLocalizedString("\(rawValue)", bundle: bundle, comment: "")
+        }
+        return ""
     }
     
 }
