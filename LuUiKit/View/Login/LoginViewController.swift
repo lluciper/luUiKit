@@ -35,6 +35,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        languageApp =  UserDefaults.standard.string(forKey: LocalizeDefaultLanguageKey) ?? "en"
+        
         setUpNSLocalizedString()
 
 //        if isRunningOnSimulator() {
@@ -54,7 +56,6 @@ class LoginViewController: UIViewController {
 //        } else {
 //            print("This is not Emulator")
 //        }
-        
         self.navigationController?.isNavigationBarHidden = true
         
         setupView()
@@ -98,7 +99,6 @@ class LoginViewController: UIViewController {
     }
     
     @objc func onChooseSignIn (_ sender: UITapGestureRecognizer) {
-        UserDefaults.standard.setValue("en", forKey: LocalizeDefaultLanguageKey)
         UIView.animate(withDuration: 0.1, animations: {
             sender.view?.backgroundColor = AppColor.origin
         }) { (completed) in
@@ -107,7 +107,6 @@ class LoginViewController: UIViewController {
     }
     
     @objc func onChooseSignUp (_ sender: UITapGestureRecognizer) {
-        UserDefaults.standard.setValue("vi", forKey: LocalizeDefaultLanguageKey)
         UIView.animate(withDuration: 0.1, animations: {
             sender.view?.backgroundColor = AppColor.origin
         }) { (completed) in
@@ -124,7 +123,7 @@ class LoginViewController: UIViewController {
             self.labelSignup.textColor = AppColor.origin
             self.viewForgotPassword.isHidden = false
             self.viewConfirmPassword.isHidden = true
-            self.btnSignInUp.setTitle("Sign In", for: .normal)
+            self.btnSignInUp.setTitle(AppLocalizable.signIn.localized, for: .normal)
         } else {
             self.viewSignUp.backgroundColor = AppColor.origin
             self.labelSignup.textColor = AppColor.white
@@ -132,15 +131,16 @@ class LoginViewController: UIViewController {
             self.labelSignIn.textColor = AppColor.origin
             self.viewForgotPassword.isHidden = true
             self.viewConfirmPassword.isHidden = false
-            self.btnSignInUp.setTitle("Sign Up", for: .normal)
+            self.btnSignInUp.setTitle(AppLocalizable.signUp.localized, for: .normal)
         }
         
     }
     
-    
     @IBAction func onSignInOrUp(_ sender: Any) {
         let vc = HomeTabBarController()
+//        let vc = QTViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }
+

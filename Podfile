@@ -9,5 +9,5 @@ target 'LuUiKit' do
 
   # Pods for LuUiKit
   pod "MTBBarcodeScanner"
-
+#  pod 'GoogleMLKit/ObjectDetection', '3.2.0'
 end

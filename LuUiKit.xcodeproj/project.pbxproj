@@ -33,6 +33,7 @@
 		390C09E02B68E79D00BDCE09 /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C09DE2B68E79D00BDCE09 /* RewardsViewController.swift */; };
 		390C09E12B68E79D00BDCE09 /* RewardsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390C09DF2B68E79D00BDCE09 /* RewardsViewController.xib */; };
 		390C09E42B68F44C00BDCE09 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C09E32B68F44C00BDCE09 /* HomeTabBarController.swift */; };
+		39135C962B995F5C00B9C640 /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 39135C952B995F5C00B9C640 /* SwiftMessages */; };
 		392472652B8DBC49005C131F /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392472642B8DBC49005C131F /* BaseViewModel.swift */; };
 		392472682B8DCF6A005C131F /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392472672B8DCF6A005C131F /* TokenModel.swift */; };
 		392657602B92BEF3000B5FB4 /* ExtString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3926575F2B92BEF3000B5FB4 /* ExtString.swift */; };
@@ -47,6 +48,9 @@
 		397209472B872A3E005E828D /* ExtUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397209462B872A3E005E828D /* ExtUILabel.swift */; };
 		397DD13A2B87315B00DEC076 /* ExtUIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397DD1392B87315B00DEC076 /* ExtUIFont.swift */; };
 		3989892E2B62617E00133DDB /* EnumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3989892D2B62617E00133DDB /* EnumApp.swift */; };
+		398BA8C52B9AB20900660F07 /* QTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398BA8C32B9AB20900660F07 /* QTViewController.swift */; };
+		398BA8C62B9AB20900660F07 /* QTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 398BA8C42B9AB20900660F07 /* QTViewController.xib */; };
+		3995554C2B985B640016E4C6 /* QRTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3995554B2B985B640016E4C6 /* QRTest.swift */; };
 		39A29D332B82ECB800A9ECAE /* ItemLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A29D312B82ECB800A9ECAE /* ItemLabelTableViewCell.swift */; };
 		39A29D342B82ECB800A9ECAE /* ItemLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39A29D322B82ECB800A9ECAE /* ItemLabelTableViewCell.xib */; };
 		39A87D4E2B9181C100DD4C45 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39A87D502B9181C100DD4C45 /* Localizable.strings */; };
@@ -104,6 +108,9 @@
 		397209462B872A3E005E828D /* ExtUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUILabel.swift; sourceTree = "<group>"; };
 		397DD1392B87315B00DEC076 /* ExtUIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUIFont.swift; sourceTree = "<group>"; };
 		3989892D2B62617E00133DDB /* EnumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumApp.swift; sourceTree = "<group>"; };
+		398BA8C32B9AB20900660F07 /* QTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QTViewController.swift; sourceTree = "<group>"; };
+		398BA8C42B9AB20900660F07 /* QTViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QTViewController.xib; sourceTree = "<group>"; };
+		3995554B2B985B640016E4C6 /* QRTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRTest.swift; sourceTree = "<group>"; };
 		39A29D312B82ECB800A9ECAE /* ItemLabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemLabelTableViewCell.swift; sourceTree = "<group>"; };
 		39A29D322B82ECB800A9ECAE /* ItemLabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemLabelTableViewCell.xib; sourceTree = "<group>"; };
 		39A87D4F2B9181C100DD4C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -127,6 +134,7 @@
 				39B5F7B72B566FF9001471A9 /* Kingfisher in Frameworks */,
 				39AE440A2B8890C500EB41C4 /* RxSwift in Frameworks */,
 				39AE44082B8890C500EB41C4 /* RxCocoa in Frameworks */,
+				39135C962B995F5C00B9C640 /* SwiftMessages in Frameworks */,
 				DEE5EF09BCEE39721D86B7B6 /* Pods_LuUiKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +178,7 @@
 		390C09A02B68A57E00BDCE09 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				398BA8C22B9AB1F500660F07 /* Test */,
 				390C09A12B68A5A100BDCE09 /* LoginViewController.swift */,
 				390C09A22B68A5A100BDCE09 /* LoginViewController.xib */,
 			);
@@ -273,6 +282,13 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		39135C9A2B9963FD00B9C640 /* Gen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Gen;
+			sourceTree = "<group>";
+		};
 		392472632B8D8397005C131F /* View Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +327,7 @@
 		393130442B4502C50061B417 /* LuUiKit */ = {
 			isa = PBXGroup;
 			children = (
+				39135C9A2B9963FD00B9C640 /* Gen */,
 				39A87D4B2B9180FF00DD4C45 /* Localizable */,
 				39C5818C2B8ED5CD0025593E /* Service */,
 				392472662B8DCF0F005C131F /* Model */,
@@ -359,6 +376,15 @@
 			path = Untils;
 			sourceTree = "<group>";
 		};
+		398BA8C22B9AB1F500660F07 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				398BA8C32B9AB20900660F07 /* QTViewController.swift */,
+				398BA8C42B9AB20900660F07 /* QTViewController.xib */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		399B42882B84A5C40083920E /* DropDownCustom */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +405,7 @@
 			isa = PBXGroup;
 			children = (
 				39C5818D2B8ED6560025593E /* AlamofireInterceptor.swift */,
+				3995554B2B985B640016E4C6 /* QRTest.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -415,6 +442,7 @@
 				39AE44042B88908F00EB41C4 /* Alamofire */,
 				39AE44072B8890C500EB41C4 /* RxCocoa */,
 				39AE44092B8890C500EB41C4 /* RxSwift */,
+				39135C952B995F5C00B9C640 /* SwiftMessages */,
 			);
 			productName = LuUiKit;
 			productReference = 393130422B4502C50061B417 /* LuUiKit.app */;
@@ -446,9 +474,10 @@
 			);
 			mainGroup = 393130392B4502C50061B417;
 			packageReferences = (
-				39B5F7B52B566FF9001471A9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				39B5F7B52B566FF9001471A9 /* XCRemoteSwiftPackageReference "Kingfisher.git" */,
 				39AE44032B88908F00EB41C4 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				39AE44062B8890C500EB41C4 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				39135C942B995F5C00B9C640 /* XCRemoteSwiftPackageReference "SwiftMessages" */,
 			);
 			productRefGroup = 393130432B4502C50061B417 /* Products */;
 			projectDirPath = "";
@@ -470,6 +499,7 @@
 				39A29D342B82ECB800A9ECAE /* ItemLabelTableViewCell.xib in Resources */,
 				390C09B12B68ABF300BDCE09 /* HomeViewController.xib in Resources */,
 				3931304F2B4502C60061B417 /* Assets.xcassets in Resources */,
+				398BA8C62B9AB20900660F07 /* QTViewController.xib in Resources */,
 				390C09CE2B68DC6000BDCE09 /* ItemOrderTableViewCell.xib in Resources */,
 				390C09C92B68DBE700BDCE09 /* BagViewController.xib in Resources */,
 				390C09D32B68E42300BDCE09 /* OrderViewController.xib in Resources */,
@@ -542,6 +572,7 @@
 				390C09DB2B68E51500BDCE09 /* OrderTableViewCell.swift in Sources */,
 				393130462B4502C50061B417 /* AppDelegate.swift in Sources */,
 				39C581902B8F12960025593E /* TestListDataModel.swift in Sources */,
+				3995554C2B985B640016E4C6 /* QRTest.swift in Sources */,
 				392472652B8DBC49005C131F /* BaseViewModel.swift in Sources */,
 				390C09B02B68ABF300BDCE09 /* HomeViewController.swift in Sources */,
 				39A87D562B91848200DD4C45 /* AppLocalizable.swift in Sources */,
@@ -562,6 +593,7 @@
 				3901E19D2B8C3E75006B7CA7 /* HelpCenterViewController.swift in Sources */,
 				3931305D2B45105C0061B417 /* ExtUIView.swift in Sources */,
 				3931305F2B45429B0061B417 /* AppColor.swift in Sources */,
+				398BA8C52B9AB20900660F07 /* QTViewController.swift in Sources */,
 				39B5F7B92B56701D001471A9 /* ExtUIImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -641,7 +673,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -696,7 +728,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -718,6 +750,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LuUiKit/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Can we access your camera in order to scan barcodes?";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -748,6 +781,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LuUiKit/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Can we access your camera in order to scan barcodes?";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -790,6 +824,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		39135C942B995F5C00B9C640 /* XCRemoteSwiftPackageReference "SwiftMessages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftKickMobile/SwiftMessages";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 		39AE44032B88908F00EB41C4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -806,7 +848,7 @@
 				minimumVersion = 6.6.0;
 			};
 		};
-		39B5F7B52B566FF9001471A9 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		39B5F7B52B566FF9001471A9 /* XCRemoteSwiftPackageReference "Kingfisher.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
@@ -817,6 +859,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		39135C952B995F5C00B9C640 /* SwiftMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39135C942B995F5C00B9C640 /* XCRemoteSwiftPackageReference "SwiftMessages" */;
+			productName = SwiftMessages;
+		};
 		39AE44042B88908F00EB41C4 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 39AE44032B88908F00EB41C4 /* XCRemoteSwiftPackageReference "Alamofire" */;
@@ -834,7 +881,7 @@
 		};
 		39B5F7B62B566FF9001471A9 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 39B5F7B52B566FF9001471A9 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = 39B5F7B52B566FF9001471A9 /* XCRemoteSwiftPackageReference "Kingfisher.git" */;
 			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */

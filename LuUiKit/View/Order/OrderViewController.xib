@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -184,7 +183,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="lOS-FN-A1P" firstAttribute="top" secondItem="WN1-vH-RhT" secondAttribute="top" constant="4" id="02g-vo-iVu"/>
                                 <constraint firstItem="78O-DU-HAt" firstAttribute="top" secondItem="WN1-vH-RhT" secondAttribute="top" constant="4" id="0sN-20-oey"/>
@@ -223,7 +222,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="57x-pO-OS9" firstAttribute="leading" secondItem="gpM-KO-ZwM" secondAttribute="leading" id="0qj-mZ-CYf"/>
                                                 <constraint firstAttribute="trailing" secondItem="57x-pO-OS9" secondAttribute="trailing" id="bwB-S4-pQc"/>
@@ -243,7 +242,7 @@ prepared!</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="XAK-dG-YIj" secondAttribute="bottom" id="1xj-3u-eM5"/>
                                                 <constraint firstItem="XAK-dG-YIj" firstAttribute="leading" secondItem="pS5-rR-tqR" secondAttribute="leading" id="btK-Fg-IYO"/>
@@ -263,7 +262,7 @@ Pick Up!</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="Pig-Yx-nMN" firstAttribute="leading" secondItem="q5S-6u-1k7" secondAttribute="leading" id="7PW-mk-QsF"/>
                                                 <constraint firstAttribute="trailing" secondItem="Pig-Yx-nMN" secondAttribute="trailing" id="FuT-vy-0Ne"/>
@@ -272,9 +271,10 @@ Pick Up!</string>
                                             </constraints>
                                         </view>
                                     </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </stackView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="I4u-Nm-MXU" secondAttribute="bottom" id="8qH-rm-oQq"/>
                                 <constraint firstAttribute="height" constant="26" id="Eaz-j5-3WD"/>
@@ -347,8 +347,5 @@ Pick Up!</string>
         <image name="bags_gray" width="25" height="25"/>
         <image name="cart_gray" width="24" height="24"/>
         <image name="cook_gray" width="24" height="24"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

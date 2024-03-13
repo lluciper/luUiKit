@@ -6,7 +6,7 @@
   
 */
 
-"signIn" = "SignIn";
-"signUp" = "SignUp";
+"signIn" = "Sign In";
+"signUp" = "Sign Up";
 "email" = "Email";
 "password" = "Password";
