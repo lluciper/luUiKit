@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3901E19D2B8C3E75006B7CA7 /* HelpCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3901E19B2B8C3E75006B7CA7 /* HelpCenterViewController.swift */; };
-		3901E19E2B8C3E75006B7CA7 /* HelpCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3901E19C2B8C3E75006B7CA7 /* HelpCenterViewController.xib */; };
 		39054FCB2B46535000887BAF /* ExtUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39054FCA2B46535000887BAF /* ExtUIViewController.swift */; };
 		390C09A32B68A5A100BDCE09 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C09A12B68A5A100BDCE09 /* LoginViewController.swift */; };
 		390C09A42B68A5A100BDCE09 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390C09A22B68A5A100BDCE09 /* LoginViewController.xib */; };
@@ -45,6 +44,7 @@
 		3931305D2B45105C0061B417 /* ExtUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3931305C2B45105C0061B417 /* ExtUIView.swift */; };
 		3931305F2B45429B0061B417 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3931305E2B45429B0061B417 /* AppColor.swift */; };
 		393130622B454CD70061B417 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393130612B454CD70061B417 /* TextField.swift */; };
+		396C61C22BA1A12F00042D0B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 396C61C12BA1A12F00042D0B /* SnapKit */; };
 		397209472B872A3E005E828D /* ExtUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397209462B872A3E005E828D /* ExtUILabel.swift */; };
 		397DD13A2B87315B00DEC076 /* ExtUIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397DD1392B87315B00DEC076 /* ExtUIFont.swift */; };
 		3989892E2B62617E00133DDB /* EnumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3989892D2B62617E00133DDB /* EnumApp.swift */; };
@@ -67,7 +67,6 @@
 
 /* Begin PBXFileReference section */
 		3901E19B2B8C3E75006B7CA7 /* HelpCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCenterViewController.swift; sourceTree = "<group>"; };
-		3901E19C2B8C3E75006B7CA7 /* HelpCenterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpCenterViewController.xib; sourceTree = "<group>"; };
 		39054FCA2B46535000887BAF /* ExtUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUIViewController.swift; sourceTree = "<group>"; };
 		390C09A12B68A5A100BDCE09 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		390C09A22B68A5A100BDCE09 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -133,6 +132,7 @@
 				39AE44052B88908F00EB41C4 /* Alamofire in Frameworks */,
 				39B5F7B72B566FF9001471A9 /* Kingfisher in Frameworks */,
 				39AE440A2B8890C500EB41C4 /* RxSwift in Frameworks */,
+				396C61C22BA1A12F00042D0B /* SnapKit in Frameworks */,
 				39AE44082B8890C500EB41C4 /* RxCocoa in Frameworks */,
 				39135C962B995F5C00B9C640 /* SwiftMessages in Frameworks */,
 				DEE5EF09BCEE39721D86B7B6 /* Pods_LuUiKit.framework in Frameworks */,
@@ -154,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				3901E19B2B8C3E75006B7CA7 /* HelpCenterViewController.swift */,
-				3901E19C2B8C3E75006B7CA7 /* HelpCenterViewController.xib */,
 			);
 			path = "Help Center";
 			sourceTree = "<group>";
@@ -443,6 +442,7 @@
 				39AE44072B8890C500EB41C4 /* RxCocoa */,
 				39AE44092B8890C500EB41C4 /* RxSwift */,
 				39135C952B995F5C00B9C640 /* SwiftMessages */,
+				396C61C12BA1A12F00042D0B /* SnapKit */,
 			);
 			productName = LuUiKit;
 			productReference = 393130422B4502C50061B417 /* LuUiKit.app */;
@@ -474,10 +474,11 @@
 			);
 			mainGroup = 393130392B4502C50061B417;
 			packageReferences = (
-				39B5F7B52B566FF9001471A9 /* XCRemoteSwiftPackageReference "Kingfisher.git" */,
+				39B5F7B52B566FF9001471A9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				39AE44032B88908F00EB41C4 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				39AE44062B8890C500EB41C4 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				39135C942B995F5C00B9C640 /* XCRemoteSwiftPackageReference "SwiftMessages" */,
+				396C61C02BA1A12F00042D0B /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 393130432B4502C50061B417 /* Products */;
 			projectDirPath = "";
@@ -506,7 +507,6 @@
 				390C09B62B68ADD600BDCE09 /* HomeTableViewCell.xib in Resources */,
 				390C09E12B68E79D00BDCE09 /* RewardsViewController.xib in Resources */,
 				390C09BF2B68D7E000BDCE09 /* AccountViewController.xib in Resources */,
-				3901E19E2B8C3E75006B7CA7 /* HelpCenterViewController.xib in Resources */,
 				39A87D4E2B9181C100DD4C45 /* Localizable.strings in Resources */,
 				390C09BA2B68D27600BDCE09 /* CakeCollectionViewCell.xib in Resources */,
 				390C09DC2B68E51500BDCE09 /* OrderTableViewCell.xib in Resources */,
@@ -832,6 +832,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		396C61C02BA1A12F00042D0B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 		39AE44032B88908F00EB41C4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -848,7 +856,7 @@
 				minimumVersion = 6.6.0;
 			};
 		};
-		39B5F7B52B566FF9001471A9 /* XCRemoteSwiftPackageReference "Kingfisher.git" */ = {
+		39B5F7B52B566FF9001471A9 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
@@ -863,6 +871,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 39135C942B995F5C00B9C640 /* XCRemoteSwiftPackageReference "SwiftMessages" */;
 			productName = SwiftMessages;
+		};
+		396C61C12BA1A12F00042D0B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 396C61C02BA1A12F00042D0B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 		39AE44042B88908F00EB41C4 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -881,7 +894,7 @@
 		};
 		39B5F7B62B566FF9001471A9 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 39B5F7B52B566FF9001471A9 /* XCRemoteSwiftPackageReference "Kingfisher.git" */;
+			package = 39B5F7B52B566FF9001471A9 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */

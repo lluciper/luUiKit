@@ -10,3 +10,12 @@
 "signUp" = "Sign Up";
 "email" = "Email";
 "password" = "Password";
+"confirmPassword" = "confirmPassword";
+"forgotPassword" = "Forgot password?";
+"or" = "or";
+"chooseALocation" = "Choose a Location";
+"featured" = "Featured";
+"categories" = "Categories";
+"hotDrinks" = "Hot Drinks";
+"icedDrink" = "Iced Drink";
+"donuts" = "Donuts";

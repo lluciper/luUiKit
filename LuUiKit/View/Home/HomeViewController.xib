@@ -13,9 +13,12 @@
             <connections>
                 <outlet property="cakeCollectionView" destination="EQk-oy-Lr0" id="0lf-Ri-UBH"/>
                 <outlet property="cakeTableView" destination="9Fr-QP-Clz" id="ZiA-fB-kbY"/>
+                <outlet property="categoriesLabel" destination="C1E-be-LR8" id="EWV-H0-O9Z"/>
+                <outlet property="chooseALocationLabel" destination="PcQ-T2-yCP" id="udq-GR-3q7"/>
                 <outlet property="donutsLabel" destination="oku-sZ-1FQ" id="H5N-Ig-x2i"/>
                 <outlet property="donutsView" destination="76o-4b-2df" id="puq-qD-srK"/>
                 <outlet property="drinkStackView" destination="zrk-SS-3KQ" id="dGz-JJ-Umb"/>
+                <outlet property="featuredLabel" destination="XmN-e1-qAu" id="ThQ-lR-Asr"/>
                 <outlet property="heightDropLocation" destination="pQ3-uv-8ng" id="AHI-gt-kJm"/>
                 <outlet property="hotDrinksLabel" destination="aUS-Xu-Akd" id="EeL-Dk-9LZ"/>
                 <outlet property="hotDrinksView" destination="ZZ6-9C-AXw" id="U0n-Kn-8WE"/>

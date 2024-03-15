@@ -10,3 +10,12 @@
 "signUp" = "Đăng Ký";
 "email" = "Email";
 "password" = "Mật khẩu";
+"confirmPassword" = "Nhập lại mật khẩu";
+"forgotPassword" = "Quên mật khẩu?";
+"or" = "hoặc";
+"chooseALocation" = "Chọn vị trí";
+"featured" = "Nổi bật";
+"categories" = "Danh mục";
+"hotDrinks" = "Đồ uống nóng";
+"icedDrink" = "Đồ uống lạnh";
+"donuts" = "Donuts";

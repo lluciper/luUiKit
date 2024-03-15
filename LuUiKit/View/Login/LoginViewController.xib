@@ -12,8 +12,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="LuUiKit" customModuleProvider="target">
             <connections>
                 <outlet property="btnSignInUp" destination="63A-z7-GS7" id="uvv-do-cid"/>
+                <outlet property="forgotPasswordLabel" destination="c2C-Ln-irr" id="D7u-AR-LNa"/>
                 <outlet property="labelSignIn" destination="Bg8-Y6-WmZ" id="oTg-y1-RNm"/>
                 <outlet property="labelSignup" destination="QMK-9C-R4x" id="G7M-oW-eF5"/>
+                <outlet property="orLabel" destination="nMc-vP-ROl" id="Pa0-Zd-Dec"/>
                 <outlet property="tfConfirmPassword" destination="F42-Zt-lVC" id="LS9-nE-YhS"/>
                 <outlet property="tfEmail" destination="wyq-cT-fOd" id="Usi-FY-1AA"/>
                 <outlet property="tfPassword" destination="nPV-xu-RJi" id="7Fn-ch-45j"/>
@@ -290,8 +292,8 @@
                                 <constraint firstAttribute="height" constant="19" id="r3H-Wg-YQd"/>
                                 <constraint firstAttribute="bottom" secondItem="4sU-Js-bf2" secondAttribute="bottom" constant="9" id="sIw-Ne-4Ib"/>
                                 <constraint firstItem="HpI-Zz-5hd" firstAttribute="top" secondItem="luX-48-OiO" secondAttribute="top" constant="9" id="uNa-yT-37o"/>
-                                <constraint firstItem="nMc-vP-ROl" firstAttribute="leading" secondItem="luX-48-OiO" secondAttribute="leading" constant="107" id="wEV-ai-oOC"/>
-                                <constraint firstAttribute="trailing" secondItem="nMc-vP-ROl" secondAttribute="trailing" constant="107" id="wsX-F2-pN7"/>
+                                <constraint firstItem="nMc-vP-ROl" firstAttribute="leading" relation="lessThanOrEqual" secondItem="luX-48-OiO" secondAttribute="leading" constant="107" id="wEV-ai-oOC"/>
+                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="nMc-vP-ROl" secondAttribute="trailing" constant="107" id="wsX-F2-pN7"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJy-32-IOk">

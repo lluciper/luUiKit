@@ -34,6 +34,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var icedDrinksLabel: UILabel!
     @IBOutlet weak var hotDrinksLabel: UILabel!
     
+    @IBOutlet weak var chooseALocationLabel: UILabel!
+    @IBOutlet weak var featuredLabel: UILabel!
+    @IBOutlet weak var categoriesLabel: UILabel!
+    
     @IBOutlet weak var cakeTableView: UITableView! {
         didSet {
             cakeTableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeTableViewCell")
@@ -54,8 +58,18 @@ class HomeViewController: UIViewController {
         }.disposed(by: disposeBag)
     }
     
+    func setUpNSLocalizedString(){
+        chooseALocationLabel.text = AppLocalizable.chooseALocation.localized
+        featuredLabel.text = AppLocalizable.featured.localized
+        categoriesLabel.text = AppLocalizable.categories.localized
+        hotDrinksLabel.text = AppLocalizable.hotDrinks.localized
+        icedDrinksLabel.text = AppLocalizable.icedDrink.localized
+        donutsLabel.text = AppLocalizable.donuts.localized
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpNSLocalizedString()
         baseView.getDataTest()
         bindTableView()
         let tapShowDropDown = UITapGestureRecognizer(target: self, action: #selector(onShowDropDown))

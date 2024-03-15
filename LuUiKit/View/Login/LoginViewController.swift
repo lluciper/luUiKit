@@ -21,8 +21,10 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var viewConfirmPassword: UIView!
     @IBOutlet weak var tfConfirmPassword: TextField!
     @IBOutlet weak var btnSignInUp: UIButton!
+    @IBOutlet weak var forgotPasswordLabel: UILabel!
+    @IBOutlet weak var orLabel: UILabel!
     
-//    func isRunningOnSimulator() -> Bool {
+    //    func isRunningOnSimulator() -> Bool {
 //        #if targetEnvironment(simulator)
 //            return true
 //        #else
@@ -69,6 +71,11 @@ class LoginViewController: UIViewController {
     func setUpNSLocalizedString(){
         labelSignIn.text = AppLocalizable.signIn.localized
         labelSignup.text = AppLocalizable.signUp.localized
+        forgotPasswordLabel.text = AppLocalizable.forgotPassword.localized
+        orLabel.text = AppLocalizable.or.localized
+        tfEmail.placeholder = AppLocalizable.email.localized
+        tfPassword.placeholder = AppLocalizable.password.localized
+        tfConfirmPassword.placeholder = AppLocalizable.confirmPassword.localized
     }
     
     func setupView(){
