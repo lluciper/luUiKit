@@ -40,6 +40,11 @@ class LoginViewController: UIViewController {
         let codeTest = Bundle.main.infoDictionary?["CUSTOM_CODE_TEST"] as! String
         print("codeTest:", codeTest)
         
+        if let apiKey = ProcessInfo.processInfo.environment["KEY_KEY"] {
+            print("Key Key: \(apiKey)")
+        } else {
+            print("Không tìm thấy giá trị của biến môi trường KEY_KEY.")
+        }
         
         languageApp =  UserDefaults.standard.string(forKey: LocalizeDefaultLanguageKey) ?? "en"
         
