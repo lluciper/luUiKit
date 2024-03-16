@@ -37,6 +37,10 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let codeTest = Bundle.main.infoDictionary?["CUSTOM_CODE_TEST"] as! String
+        print("codeTest:", codeTest)
+        
+        
         languageApp =  UserDefaults.standard.string(forKey: LocalizeDefaultLanguageKey) ?? "en"
         
         setUpNSLocalizedString()
