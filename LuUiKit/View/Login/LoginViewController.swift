@@ -43,7 +43,7 @@ class LoginViewController: UIViewController {
         if let apiKey = ProcessInfo.processInfo.environment["KEY_KEY"] {
             print("Key Key: \(apiKey)")
         } else {
-            print("Không tìm thấy giá trị của biến môi trường KEY_KEY.")
+            print("Không tìm thấy giá trị của biến môi trường KEY_KEY.(env)")
         }
         
         languageApp =  UserDefaults.standard.string(forKey: LocalizeDefaultLanguageKey) ?? "en"

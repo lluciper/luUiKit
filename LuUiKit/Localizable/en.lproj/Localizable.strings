@@ -13,9 +13,22 @@
 "confirmPassword" = "confirmPassword";
 "forgotPassword" = "Forgot password?";
 "or" = "or";
+
 "chooseALocation" = "Choose a Location";
 "featured" = "Featured";
 "categories" = "Categories";
 "hotDrinks" = "Hot Drinks";
 "icedDrink" = "Iced Drink";
 "donuts" = "Donuts";
+
+"home" = "Home";
+"orders" = "Order";
+"gift" = "Gift";
+"account" = "Account";
+
+"accountSettings" = "Account Settings";
+"favorites" = "Favorites";
+"notifications" = "Notifications";
+"helpCenter" = "Help Center";
+"signOut" = "Sign Out";
+"language" = "Language";

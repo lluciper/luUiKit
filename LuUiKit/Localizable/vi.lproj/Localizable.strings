@@ -13,9 +13,22 @@
 "confirmPassword" = "Nhập lại mật khẩu";
 "forgotPassword" = "Quên mật khẩu?";
 "or" = "hoặc";
+
 "chooseALocation" = "Chọn vị trí";
 "featured" = "Nổi bật";
 "categories" = "Danh mục";
 "hotDrinks" = "Đồ uống nóng";
 "icedDrink" = "Đồ uống lạnh";
 "donuts" = "Donuts";
+
+"home" = "Trang chủ";
+"orders" = "Đơn hàng";
+"gift" = "Quà tặng";
+"account" = "Tài khoản";
+
+"accountSettings" = "Cài đặt tài khoản";
+"favorites" = "Mục ưa thích";
+"notifications" = "Thông báo";
+"helpCenter" = "Hỗ trợ";
+"signOut" = "Đăng xuất";
+"language" = "Ngôn ngữ";

@@ -21,12 +21,31 @@ class AccountViewController: UIViewController {
     @IBOutlet weak var viewLanguageVi: UIView!
     @IBOutlet weak var viewLanguageEn: UIView!
     
+    
+    @IBOutlet weak var accountSettingsLabel: UILabel!
+    @IBOutlet weak var favoritesLabel: UILabel!
+    @IBOutlet weak var notificationsLabel: UILabel!
+    @IBOutlet weak var helpCenterLabel: UILabel!
+    @IBOutlet weak var signOutLabel: UILabel!
+    @IBOutlet weak var languageLabel: UILabel!
+    
     let isSelectLanguageEn: Bool = languageApp == "en"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
         setIamgeSelectLanguage()
+        setUpNSLocalizedString()
         setUpOntapView()
+    }
+    
+    func setUpNSLocalizedString(){
+        accountSettingsLabel.text = AppLocalizable.accountSettings.localized
+        favoritesLabel.text = AppLocalizable.favorites.localized
+        notificationsLabel.text = AppLocalizable.notifications.localized
+        helpCenterLabel.text = AppLocalizable.helpCenter.localized
+        signOutLabel.text = AppLocalizable.signOut.localized
+        languageLabel.text = AppLocalizable.language.localized + ":"
     }
     
     func setUpView(){

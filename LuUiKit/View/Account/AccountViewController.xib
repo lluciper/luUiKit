@@ -11,13 +11,19 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountViewController" customModule="LuUiKit" customModuleProvider="target">
             <connections>
+                <outlet property="accountSettingsLabel" destination="bvg-Bu-jLI" id="ebv-A7-6o2"/>
                 <outlet property="accountSettingsView" destination="0Cr-xy-VKh" id="VrD-Fj-P2f"/>
+                <outlet property="favoritesLabel" destination="Its-U7-oQ6" id="lh8-ZF-7AF"/>
                 <outlet property="favoritesView" destination="Op2-ky-gGg" id="zWJ-9i-5Nv"/>
+                <outlet property="helpCenterLabel" destination="JzB-v3-8Qb" id="VeW-8K-cJ8"/>
                 <outlet property="helpCenterView" destination="mud-Vp-3I8" id="xYs-BC-ykF"/>
                 <outlet property="imgAccount" destination="YVN-uj-mHO" id="0G4-aT-1Dg"/>
                 <outlet property="imgSelectLanguageEn" destination="6uO-x3-HjB" id="4JF-rV-bvQ"/>
                 <outlet property="imgSelectLanguageVi" destination="qUe-JD-KzZ" id="dHE-xZ-pIY"/>
+                <outlet property="languageLabel" destination="jr8-Os-dds" id="lKD-7i-kVh"/>
+                <outlet property="notificationsLabel" destination="ayw-QB-zoB" id="deL-Ew-013"/>
                 <outlet property="notificationsView" destination="zEK-HF-Ihe" id="zlC-4R-nPu"/>
+                <outlet property="signOutLabel" destination="2VL-fS-4or" id="t4d-Ub-68s"/>
                 <outlet property="signOutView" destination="6qO-Rd-Ldq" id="BS3-rH-kTB"/>
                 <outlet property="view" destination="m8C-y2-4q0" id="pD7-Tc-HRF"/>
                 <outlet property="viewLanguageEn" destination="mvy-YG-gjR" id="e5J-y5-efA"/>

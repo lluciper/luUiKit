@@ -34,10 +34,10 @@ class HomeTabBarController: UITabBarController {
         vcRewards.tabBarItem.image = UIImage(named: "Gift")
         vcAccount.tabBarItem.image = UIImage(named: "Account")
         
-        vcHome.tabBarItem.title = "Home"
-        vcOrder.tabBarItem.title = "Orders"
-        vcRewards.tabBarItem.title = "Gift"
-        vcAccount.tabBarItem.title = "Account"
+        vcHome.tabBarItem.title = AppLocalizable.home.localized
+        vcOrder.tabBarItem.title = AppLocalizable.orders.localized
+        vcRewards.tabBarItem.title = AppLocalizable.gift.localized
+        vcAccount.tabBarItem.title = AppLocalizable.account.localized
         
 //        let navHome = UINavigationController(rootViewController: vcHome)
 //        let navOrder = UINavigationController(rootViewController: vcOrder)
